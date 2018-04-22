@@ -13,3 +13,6 @@ func _process(delta):
 		move_vector = move_vector.normalized()
 	position += move_vector * delta * SPEED
 	detect_pos = false
+
+func _on_Visibility_screen_exited():
+	queue_free()
