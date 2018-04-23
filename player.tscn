@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://player.gd" type="Script" id=1]
 [ext_resource path="res://projectile.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=3]
+[ext_resource path="res://world-floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -21,10 +22,11 @@ audio_bus_name = "Master"
 script = ExtResource( 1 )
 SPEED = 300
 projectile = ExtResource( 2 )
+ground = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 

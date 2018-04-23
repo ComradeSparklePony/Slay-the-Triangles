@@ -5,6 +5,7 @@ var velocity = Vector2()
 var screensize
 
 export (PackedScene) var projectile
+export (PackedScene) var ground
 
 func _ready():
 	screensize = get_viewport_rect().size
@@ -34,3 +35,4 @@ func _input(event):
 	if event.is_action_pressed("click"):
 		var active_projectile = projectile.instance()
 		add_child(active_projectile)
+
