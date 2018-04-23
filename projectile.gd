@@ -9,7 +9,7 @@ func _ready():
 
 func _process(delta):
 	if detect_pos:
-		move_vector = get_global_mouse_position() - position
+		move_vector = get_local_mouse_position() - position
 		move_vector = move_vector.normalized()
 	position += move_vector * delta * SPEED
 	detect_pos = false
