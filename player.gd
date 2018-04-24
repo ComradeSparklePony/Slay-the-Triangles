@@ -5,7 +5,6 @@ var velocity = Vector2()
 var screensize
 
 export (PackedScene) var projectile
-export (PackedScene) var ground
 
 func _ready():
 	screensize = get_viewport_rect().size
