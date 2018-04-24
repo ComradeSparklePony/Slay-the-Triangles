@@ -12,11 +12,15 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 150, 150 )
 _sections_unfolded = [ "Collision", "Material", "Transform", "Visibility", "Z Index", "collision" ]
 
-[node name="world-wall" parent="." index="1" instance=ExtResource( 2 )]
+[node name="world-wall" parent="." index="1" groups=[
+"wall",
+] instance=ExtResource( 2 )]
 
 position = Vector2( 50, 50 )
 
-[node name="world-wall2" parent="." index="2" instance=ExtResource( 2 )]
+[node name="world-wall2" parent="." index="2" groups=[
+"wall",
+] instance=ExtResource( 2 )]
 
 position = Vector2( 610, 400 )
 
