@@ -3,8 +3,6 @@ extends KinematicBody2D
 export (int) var SPEED
 var velocity = Vector2()
 
-var colliding = false
-
 export (PackedScene) var projectile
 
 func _ready():
@@ -25,7 +23,6 @@ func _process(delta):
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * SPEED
-	
 	
 	move_and_collide(velocity * delta)
 	
