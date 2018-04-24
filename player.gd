@@ -1,13 +1,14 @@
-extends Area2D
+extends KinematicBody2D
 
 export (int) var SPEED
 var velocity = Vector2()
-var screensize
+
+var colliding = false
 
 export (PackedScene) var projectile
 
 func _ready():
-	screensize = get_viewport_rect().size
+	pass
 
 func _process(delta):
 	
@@ -25,9 +26,8 @@ func _process(delta):
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * SPEED
 	
-	position += velocity * delta
-	position.x = clamp(position.x, 0, screensize.x)
-	position.y = clamp(position.y, 0, screensize.y)
+	
+	move_and_collide(velocity * delta)
 	
 
 func _input(event):
