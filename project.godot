@@ -36,4 +36,5 @@ click=[ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_n
 
 [rendering]
 
+environment/default_clear_color=Color( 0.484375, 0.484375, 0.484375, 1 )
 environment/default_environment="res://default_env.tres"
