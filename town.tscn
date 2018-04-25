@@ -14,173 +14,115 @@ _sections_unfolded = [ "Collision", "Material", "Transform", "Visibility", "Z In
 
 [node name="walls" type="Node2D" parent="." index="1"]
 
-editor/display_folded = true
-
-[node name="world-wall0" parent="walls" index="0" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall0" parent="walls" index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 50, 50 )
 
-[node name="world-wall1" parent="walls" index="1" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall1" parent="walls" index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 150, 50 )
 
-[node name="world-wall2" parent="walls" index="2" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall2" parent="walls" index="2" instance=ExtResource( 2 )]
 
 position = Vector2( 250, 50 )
 
-[node name="world-wall3" parent="walls" index="3" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall3" parent="walls" index="3" instance=ExtResource( 2 )]
 
 position = Vector2( 350, 50 )
 
-[node name="world-wall4" parent="walls" index="4" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall4" parent="walls" index="4" instance=ExtResource( 2 )]
 
 position = Vector2( 450, 50 )
 
-[node name="world-wall5" parent="walls" index="5" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall5" parent="walls" index="5" instance=ExtResource( 2 )]
 
 position = Vector2( 550, 50 )
 
-[node name="world-wall6" parent="walls" index="6" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall6" parent="walls" index="6" instance=ExtResource( 2 )]
 
 position = Vector2( 650, 50 )
 
-[node name="world-wall7" parent="walls" index="7" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall7" parent="walls" index="7" instance=ExtResource( 2 )]
 
 position = Vector2( 750, 50 )
 
-[node name="world-wall8" parent="walls" index="8" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall8" parent="walls" index="8" instance=ExtResource( 2 )]
 
 position = Vector2( 850, 50 )
 
-[node name="world-wall9" parent="walls" index="9" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall9" parent="walls" index="9" instance=ExtResource( 2 )]
 
 position = Vector2( 950, 50 )
 
-[node name="world-wall10" parent="walls" index="10" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall10" parent="walls" index="10" instance=ExtResource( 2 )]
 
 position = Vector2( 950, 150 )
 
-[node name="world-wall11" parent="walls" index="11" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall11" parent="walls" index="11" instance=ExtResource( 2 )]
 
 position = Vector2( 950, 250 )
 
-[node name="world-wall12" parent="walls" index="12" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall12" parent="walls" index="12" instance=ExtResource( 2 )]
 
 position = Vector2( 950, 350 )
 
-[node name="world-wall13" parent="walls" index="13" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall13" parent="walls" index="13" instance=ExtResource( 2 )]
 
 position = Vector2( 950, 440 )
 
-[node name="world-wall14" parent="walls" index="14" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall14" parent="walls" index="14" instance=ExtResource( 2 )]
 
 position = Vector2( 950, 540 )
 
-[node name="world-wall15" parent="walls" index="15" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall15" parent="walls" index="15" instance=ExtResource( 2 )]
 
 position = Vector2( 850, 540 )
 
-[node name="world-wall16" parent="walls" index="16" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall16" parent="walls" index="16" instance=ExtResource( 2 )]
 
 position = Vector2( 750, 540 )
 
-[node name="world-wall17" parent="walls" index="17" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall17" parent="walls" index="17" instance=ExtResource( 2 )]
 
 position = Vector2( 650, 540 )
 
-[node name="world-wall18" parent="walls" index="18" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall18" parent="walls" index="18" instance=ExtResource( 2 )]
 
 position = Vector2( 550, 540 )
 
-[node name="world-wall19" parent="walls" index="19" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall19" parent="walls" index="19" instance=ExtResource( 2 )]
 
 position = Vector2( 450, 540 )
 
-[node name="world-wall20" parent="walls" index="20" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall20" parent="walls" index="20" instance=ExtResource( 2 )]
 
 position = Vector2( 350, 540 )
 
-[node name="world-wall21" parent="walls" index="21" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall21" parent="walls" index="21" instance=ExtResource( 2 )]
 
 position = Vector2( 250, 540 )
 
-[node name="world-wall22" parent="walls" index="22" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall22" parent="walls" index="22" instance=ExtResource( 2 )]
 
 position = Vector2( 150, 540 )
 
-[node name="world-wall23" parent="walls" index="23" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall23" parent="walls" index="23" instance=ExtResource( 2 )]
 
 position = Vector2( 50, 540 )
 
-[node name="world-wall24" parent="walls" index="24" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall24" parent="walls" index="24" instance=ExtResource( 2 )]
 
 position = Vector2( 50, 440 )
 
-[node name="world-wall25" parent="walls" index="25" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall25" parent="walls" index="25" instance=ExtResource( 2 )]
 
 position = Vector2( 50, 340 )
 
-[node name="world-wall26" parent="walls" index="26" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall26" parent="walls" index="26" instance=ExtResource( 2 )]
 
 position = Vector2( 50, 250 )
 
-[node name="world-wall27" parent="walls" index="27" groups=[
-"wall",
-] instance=ExtResource( 2 )]
+[node name="world-wall27" parent="walls" index="27" instance=ExtResource( 2 )]
 
 position = Vector2( 50, 150 )
 
