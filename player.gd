@@ -24,7 +24,8 @@ func _process(delta):
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * SPEED
 	
-	move_and_collide(velocity * delta)
+	move_and_collide(Vector2(velocity.x, 0) * delta)
+	move_and_collide(Vector2(0, velocity.y) * delta)
 	
 
 func _input(event):
