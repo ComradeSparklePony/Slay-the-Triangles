@@ -8,7 +8,7 @@
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 wall = ExtResource( 2 )
-MAZESIZE = 5
-TUNNELS = null
+MAZESIZE = 10
+TUNNELS = 50
 
 
