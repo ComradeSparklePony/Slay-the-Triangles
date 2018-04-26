@@ -3,6 +3,7 @@ extends Node2D
 export (PackedScene) var wall
 export (PackedScene) var player
 export (int) var MAZESIZE
+export (int) var TUNLEN
 export (int) var TUNNELS
 
 var wall_array
@@ -40,7 +41,7 @@ func _ready():
 		else:
 			direction = vert_directions[randi() % 2]
 		
-		length = (randi() % (MAZESIZE - 1)) + 1
+		length = (randi() % (TUNLEN - 1)) + 1
 		
 		#repeat for length and as long as not colliding with wall
 		while length > 0 and not (maze_point.x == 0 or maze_point.y == 0 or maze_point.x == MAZESIZE - 1 or maze_point.y == MAZESIZE - 1):
@@ -50,6 +51,9 @@ func _ready():
 		if (maze_point.x == 0 or maze_point.y == 0 or maze_point.x == MAZESIZE - 1 or maze_point.y == MAZESIZE - 1):
 			maze_point = Vector2((randi() % MAZESIZE), (randi() % MAZESIZE))
 		tunnels -= 1
+	
+	for i in wall_array:
+		print(i)
 	
 	# PLACE WALLS
 	
@@ -77,3 +81,4 @@ func _ready():
 				add_child(spawn_player)
 				player_spawned = true
 				
+	

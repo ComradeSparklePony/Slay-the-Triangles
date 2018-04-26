@@ -11,6 +11,7 @@ _sections_unfolded = [ "Transform" ]
 wall = ExtResource( 2 )
 player = ExtResource( 3 )
 MAZESIZE = 100
-TUNNELS = 350
+TUNLEN = 7
+TUNNELS = 750
 
 
