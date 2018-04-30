@@ -52,8 +52,6 @@ func _ready():
 			maze_point = Vector2((randi() % MAZESIZE), (randi() % MAZESIZE))
 		tunnels -= 1
 	
-	for i in wall_array:
-		print(i)
 	
 	# PLACE WALLS
 	
