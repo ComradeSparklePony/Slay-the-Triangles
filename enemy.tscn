@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://enemy.gd" type="Script" id=1]
 [ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=2]
 [ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=3]
 [ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=4]
+[ext_resource path="res://enemy-weapon.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -73,6 +74,8 @@ radial_fill_degrees = 360.0
 radial_center_offset = Vector2( 0, 0 )
 nine_patch_stretch = false
 _sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="enemy-weapon" parent="." index="4" instance=ExtResource( 5 )]
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 
