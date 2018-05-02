@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
 export (int) var SPEED
+export (int) var attack
+
 var velocity = Vector2()
 
 export (PackedScene) var projectile
