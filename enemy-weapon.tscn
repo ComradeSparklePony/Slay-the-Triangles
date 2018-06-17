@@ -8,7 +8,9 @@
 custom_solver_bias = 0.0
 points = PoolVector2Array( 0, -62.5, 12.5, -37.5, -12.5, -37.5 )
 
-[node name="enemy-weapon" type="Area2D"]
+[node name="enemy-weapon" type="Area2D" groups=[
+"kill_proj",
+]]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -30,5 +32,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
 shape = SubResource( 1 )
+
+[connection signal="area_entered" from="." to="." method="_on_enemyweapon_area_entered"]
 
 

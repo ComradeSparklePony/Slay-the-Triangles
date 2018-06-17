@@ -22,7 +22,5 @@ func _on_Visibility_screen_exited():
 	queue_free()
 
 func _on_projectile_body_entered(body):
-	if (body.is_in_group("wall")):
-		queue_free()
-	if body.is_in_group("enemy"):
+	if (body.is_in_group("kill_proj")):
 		queue_free()
