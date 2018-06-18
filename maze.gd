@@ -2,7 +2,6 @@ extends Node2D
 
 # packedscenes and metavars
 export (PackedScene) var wall
-export (PackedScene) var player
 export (int) var MAZESIZE
 export (int) var TUNLEN
 export (int) var TUNNELS
@@ -78,9 +77,7 @@ func _ready():
 	for y in range(MAZESIZE):
 		for x in range(MAZESIZE):
 			if wall_array[y][x] == 1 and not player_spawned:
-				spawn_player = player.instance()
-				spawn_player.position = Vector2(x, y) * 100
-				add_child(spawn_player)
+				$player.position = Vector2(x, y) * 100
 				player_spawned = true
 				
 	

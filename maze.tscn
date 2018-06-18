@@ -9,9 +9,10 @@
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 wall = ExtResource( 2 )
-player = ExtResource( 3 )
 MAZESIZE = 100
 TUNLEN = 10
 TUNNELS = 800
+
+[node name="player" parent="." index="0" instance=ExtResource( 3 )]
 
 
