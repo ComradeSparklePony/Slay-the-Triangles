@@ -64,3 +64,11 @@ func _on_Timer_timeout():
 	new_enemy.position = position
 	get_parent().add_child(new_enemy)
 	$Timer.start()
+
+
+func _on_Area2D_area_entered(area):
+	if area.is_in_group("projectile"):
+		hp -= player.attack
+		$TextureProgress.value = hp
+		if hp == 0:
+			queue_free()
