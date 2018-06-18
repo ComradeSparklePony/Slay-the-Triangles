@@ -9,7 +9,9 @@
 custom_solver_bias = 0.0
 radius = 25.0
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=[
+"collide",
+]]
 
 input_pickable = true
 collision_layer = 1

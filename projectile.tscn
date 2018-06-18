@@ -9,6 +9,7 @@ custom_solver_bias = 0.0
 radius = 13.0005
 
 [node name="projectile" type="Area2D" groups=[
+"collide",
 "projectile",
 ]]
 
