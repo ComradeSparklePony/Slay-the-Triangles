@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://enemy.gd" type="Script" id=1]
-[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=2]
-[ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=3]
-[ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=4]
-[ext_resource path="res://enemy-weapon.tscn" type="PackedScene" id=5]
+[ext_resource path="res://enemy-weapon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=3]
+[ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=4]
+[ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -22,10 +22,11 @@ collision/safe_margin = 0.08
 script = ExtResource( 1 )
 SPEED = 250
 hp = 100
+enemy_weapon = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
@@ -67,16 +68,23 @@ page = 0.0
 value = 0.0
 exp_edit = false
 rounded = false
-texture_under = ExtResource( 3 )
+texture_under = ExtResource( 4 )
 texture_over = null
-texture_progress = ExtResource( 4 )
+texture_progress = ExtResource( 5 )
 radial_fill_degrees = 360.0
 radial_center_offset = Vector2( 0, 0 )
 nine_patch_stretch = false
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="enemy-weapon" parent="." index="4" instance=ExtResource( 5 )]
+[node name="Timer" type="Timer" parent="." index="4"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 

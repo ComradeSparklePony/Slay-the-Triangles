@@ -32,6 +32,5 @@ func _process(delta):
 
 func _input(event):
 	if event.is_action_pressed("click"):
-		var active_projectile = projectile.instance()
-		add_child(active_projectile)
+		add_child(projectile.instance())
 
