@@ -1,11 +1,13 @@
 extends Node2D
 
+# packedscenes and metavars
 export (PackedScene) var wall
 export (PackedScene) var player
 export (int) var MAZESIZE
 export (int) var TUNLEN
 export (int) var TUNNELS
 
+# wall array contaisn where the walls are
 var wall_array
 var tunnels
 
@@ -13,13 +15,15 @@ func _ready():
 	tunnels = TUNNELS
 	randomize()
 	
+	# directions
 	var vert_directions = [Vector2(0,1), Vector2(0,-1)]
 	var hori_directions = [Vector2(1,0), Vector2(-1, 0)]
+	# place in the maze and direction
 	var maze_point = Vector2()
 	var direction = Vector2()
 	var length
 	
-	#Create emptey maze
+	#Create empty maze
 	wall_array = []
 	for i in range(MAZESIZE):
 		wall_array.append([])

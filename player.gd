@@ -14,6 +14,7 @@ func _process(delta):
 	
 	velocity = Vector2()
 	
+	# move
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 	if Input.is_action_pressed("ui_left"):
@@ -31,6 +32,7 @@ func _process(delta):
 	
 
 func _input(event):
+	# create projectile
 	if event.is_action_pressed("click"):
 		add_child(projectile.instance())
 
