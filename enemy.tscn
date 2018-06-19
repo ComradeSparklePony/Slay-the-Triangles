@@ -11,7 +11,7 @@
 custom_solver_bias = 0.0
 points = PoolVector2Array( 0, -25, 25, 25, -25, 25 )
 
-[node name="enemy" type="KinematicBody2D" groups=[
+[node name="enemy" type="KinematicBody2D" index="0" groups=[
 "collide",
 "kill_proj",
 ]]

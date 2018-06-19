@@ -17,7 +17,6 @@ func _ready():
 	$Timer.wait_time = rand_range(2, 10)
 	# create enemy weapon
 	add_child(enemy_weapon.instance())
-	print("enemy created")
 
 func _process(delta):
 	# find player position and move towards it
