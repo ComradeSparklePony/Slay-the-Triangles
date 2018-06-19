@@ -24,7 +24,7 @@ _sections_unfolded = [ "Collision", "collision" ]
 SPEED = 300
 attack = 10
 RELOAD_TIME = 0.15
-max_hp = 150
+max_hp = 200
 projectile = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]

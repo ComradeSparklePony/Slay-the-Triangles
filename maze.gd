@@ -74,20 +74,24 @@ func _ready():
 	
 	#spawn player at an open area
 	var player_spawned = false
-	for y in range(MAZESIZE):
-		for x in range(MAZESIZE):
+	for y in shuffle(range(MAZESIZE)):
+		for x in shuffle(range(MAZESIZE)):
 			if wall_array[y][x] == 1 and not player_spawned:
 				$player.position = Vector2(x, y) * 100
 				player_spawned = true
 				
 	#spawn spawner at open area at opposite corner
 	var spawner_spawned = false
-	var spawn
-	var reverse_mazesize = range(MAZESIZE)
-	reverse_mazesize.invert()
-	for y in reverse_mazesize:
-		for x in reverse_mazesize:
+	for y in shuffle(range(MAZESIZE)):
+		for x in shuffle(range(MAZESIZE)):
 			if wall_array[y][x] == 1 and not spawner_spawned:
 				$"enemy-spawner".position = Vector2(x, y) * 100
 				spawner_spawned = true
+func shuffle(array):
+	var shuffle_array = []
+	while array.size() > 0:
+		var item = array[randi() % (array.size())]
+		shuffle_array.append(item)
+		array.erase(item)
+	return shuffle_array
 	
