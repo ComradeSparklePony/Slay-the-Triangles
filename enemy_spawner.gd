@@ -8,6 +8,7 @@ var velocity
 var player
 
 var first_process = true
+var first_hit = true
 
 export (int) var max_hp
 var hp
@@ -72,3 +73,8 @@ func _on_Area2D_area_entered(area):
 		$TextureProgress.value = hp
 		if hp == 0:
 			queue_free()
+		if first_hit:
+			$Timer.wait_time = 0.1
+			get_parent().add_child(enemy.instance())
+			$Timer.start()
+			first_hit = false

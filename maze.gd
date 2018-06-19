@@ -44,13 +44,14 @@ func _ready():
 		else:
 			direction = vert_directions[randi() % 2]
 		
-		length = (randi() % (TUNLEN - 1)) + 1
+		length = rand_range(5, TUNLEN)
 		
 		#repeat for length and as long as not colliding with wall
 		while length > 0 and not (maze_point.x == 0 or maze_point.y == 0 or maze_point.x == MAZESIZE - 1 or maze_point.y == MAZESIZE - 1):
 			wall_array[maze_point.y][maze_point.x] = 1
 			maze_point += direction
-			length -= 1
+			length -= 1	
+		
 		if (maze_point.x == 0 or maze_point.y == 0 or maze_point.x == MAZESIZE - 1 or maze_point.y == MAZESIZE - 1):
 			maze_point = Vector2((randi() % MAZESIZE), (randi() % MAZESIZE))
 		tunnels -= 1
@@ -72,7 +73,6 @@ func _ready():
 		maze_point.x = 0
 	
 	#spawn player at an open area
-	var spawn_player
 	var player_spawned = false
 	for y in range(MAZESIZE):
 		for x in range(MAZESIZE):
@@ -80,4 +80,14 @@ func _ready():
 				$player.position = Vector2(x, y) * 100
 				player_spawned = true
 				
+	#spawn spawner at open area at opposite corner
+	var spawner_spawned = false
+	var spawn
+	var reverse_mazesize = range(MAZESIZE)
+	reverse_mazesize.invert()
+	for y in reverse_mazesize:
+		for x in reverse_mazesize:
+			if wall_array[y][x] == 1 and not spawner_spawned:
+				$"enemy-spawner".position = Vector2(x, y) * 100
+				spawner_spawned = true
 	

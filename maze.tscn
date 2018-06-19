@@ -1,18 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://maze.gd" type="Script" id=1]
 [ext_resource path="res://world-wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=4]
 
-[node name="maze" type="Node2D"]
+[node name="maze" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 wall = ExtResource( 2 )
 MAZESIZE = 100
 TUNLEN = 10
-TUNNELS = 800
+TUNNELS = 1000
 
 [node name="player" parent="." index="0" instance=ExtResource( 3 )]
+
+[node name="enemy-spawner" parent="." index="1" instance=ExtResource( 4 )]
+
+max_hp = 300
 
 
