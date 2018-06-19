@@ -21,7 +21,7 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "collision" ]
 SPEED = 300
 attack = 5
-RELOAD_TIME = 0.2
+RELOAD_TIME = 0.15
 projectile = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
@@ -64,5 +64,7 @@ process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 

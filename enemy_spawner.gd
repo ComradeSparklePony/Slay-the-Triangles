@@ -59,7 +59,7 @@ func _process(delta):
 func _on_Timer_timeout():
 	var player_distance
 	player_distance = position.distance_to(player.position)
-	$Timer.wait_time = player_distance / 30
+	$Timer.wait_time = player_distance / 50
 	var new_enemy = enemy.instance()
 	new_enemy.position = position
 	get_parent().add_child(new_enemy)

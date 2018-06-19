@@ -15,7 +15,7 @@ func _ready():
 func _process(delta):
 	
 	# create projectile
-	if Input.is_mouse_button_pressed(BUTTON_LEFT) and RELOAD_TIME == 0:
+	if Input.is_mouse_button_pressed(BUTTON_LEFT) and $Timer.time_left == 0:
 		add_child(projectile.instance())
 		$Timer.start()
 	
@@ -38,5 +38,5 @@ func _process(delta):
 	move_and_collide(Vector2(velocity.x, 0) * delta)
 	move_and_collide(Vector2(0, velocity.y) * delta)
 	
-
-
+func _on_Timer_timeout():
+	pass # replace with function body
