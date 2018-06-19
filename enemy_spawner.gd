@@ -65,7 +65,7 @@ func _on_Timer_timeout():
 	get_parent().add_child(new_enemy)
 	$Timer.start()
 
-
+# remove hp if in contact with player projectile
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("projectile"):
 		hp -= player.attack

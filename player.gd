@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+# vars
 export (int) var SPEED
 export (int) var attack
 export (float) var RELOAD_TIME
@@ -12,9 +13,11 @@ var velocity = Vector2()
 export (PackedScene) var projectile
 
 func _ready():
+	# setup timer
 	$Timer.wait_time = RELOAD_TIME
 	$Timer.start()
 	
+	# prepare health bar
 	hp = max_hp
 	
 	$TextureProgress.max_value = max_hp
@@ -50,6 +53,7 @@ func _process(delta):
 # remove attack from hp
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("enemy_weapon"):
+		# gets the enemy's attack
 		var enemy_ATTACK = area.get_parent().ATTACK
 		hp -= enemy_ATTACK
 		$TextureProgress.value = hp
