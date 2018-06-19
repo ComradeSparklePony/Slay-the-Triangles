@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 # vars
 export (int) var SPEED
+export (int) var ATTACK
 
 var player
 var velocity

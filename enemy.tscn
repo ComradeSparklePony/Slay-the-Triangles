@@ -11,7 +11,7 @@
 custom_solver_bias = 0.0
 points = PoolVector2Array( 0, -25, 25, 25, -25, 25 )
 
-[node name="enemy" type="KinematicBody2D" index="0" groups=[
+[node name="enemy" type="KinematicBody2D" groups=[
 "collide",
 "kill_proj",
 ]]
@@ -22,6 +22,7 @@ collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 SPEED = 250
+ATTACK = 5
 hp = 100
 enemy_weapon = ExtResource( 2 )
 

@@ -9,6 +9,7 @@ custom_solver_bias = 0.0
 points = PoolVector2Array( 0, -62.5, 12.5, -37.5, -12.5, -37.5 )
 
 [node name="enemy-weapon" type="Area2D" groups=[
+"enemy_weapon",
 "kill_proj",
 ]]
 

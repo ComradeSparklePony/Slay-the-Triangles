@@ -27,7 +27,7 @@ collision/safe_margin = 0.08
 script = ExtResource( 1 )
 enemy = ExtResource( 2 )
 ROT_SPEED = 15
-SPEED = 7
+SPEED = 3
 max_hp = 30
 
 [node name="tri1" type="CollisionShape2D" parent="." index="0"]

@@ -4,6 +4,9 @@ export (int) var SPEED
 export (int) var attack
 export (float) var RELOAD_TIME
 
+export (int) var max_hp
+var hp
+
 var velocity = Vector2()
 
 export (PackedScene) var projectile
@@ -11,6 +14,11 @@ export (PackedScene) var projectile
 func _ready():
 	$Timer.wait_time = RELOAD_TIME
 	$Timer.start()
+	
+	hp = max_hp
+	
+	$TextureProgress.max_value = max_hp
+	$TextureProgress.value = hp
 
 func _process(delta):
 	
@@ -38,5 +46,12 @@ func _process(delta):
 	move_and_collide(Vector2(velocity.x, 0) * delta)
 	move_and_collide(Vector2(0, velocity.y) * delta)
 	
-func _on_Timer_timeout():
-	pass # replace with function body
+
+# remove attack from hp
+func _on_Area2D_area_entered(area):
+	if area.is_in_group("enemy_weapon"):
+		var enemy_ATTACK = area.get_parent().ATTACK
+		hp -= enemy_ATTACK
+		$TextureProgress.value = hp
+		if hp == 0:
+			queue_free()
