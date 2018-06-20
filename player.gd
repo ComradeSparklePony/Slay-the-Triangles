@@ -64,8 +64,8 @@ func _process(delta):
 	move_and_collide(Vector2(0, velocity.y) * delta)
 	
 
-# remove attack from hp
 func _on_Area2D_area_entered(area):
+	# remove attack from hp
 	if area.is_in_group("enemy_weapon"):
 		# gets the enemy's attack
 		var enemy_ATTACK = area.get_parent().ATTACK
@@ -73,6 +73,3 @@ func _on_Area2D_area_entered(area):
 		$TextureProgress.value = hp
 		if hp == 0:
 			queue_free()
-	if area.is_in_group("coins"):
-		coins += 1
-		print(coins)
