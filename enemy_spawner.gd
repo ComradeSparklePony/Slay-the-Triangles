@@ -29,7 +29,7 @@ func _ready():
 	# player
 	player = get_parent().get_node("player")
 	
-	$Timer.wait_time = 1
+	$Timer.wait_time = 5
 	$Timer.start()
 	
 

@@ -2,8 +2,8 @@
 
 [ext_resource path="res://maze.gd" type="Script" id=1]
 [ext_resource path="res://world-wall.tscn" type="PackedScene" id=2]
-[ext_resource path="res://player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player.tscn" type="PackedScene" id=4]
 
 [node name="maze" type="Node2D" index="0"]
 
@@ -14,10 +14,10 @@ MAZESIZE = 100
 TUNLEN = 10
 TUNNELS = 1000
 
-[node name="player" parent="." index="0" instance=ExtResource( 3 )]
-
-[node name="enemy-spawner" parent="." index="1" instance=ExtResource( 4 )]
+[node name="enemy-spawner" parent="." index="0" instance=ExtResource( 3 )]
 
 max_hp = 300
+
+[node name="player" parent="." index="1" instance=ExtResource( 4 )]
 
 

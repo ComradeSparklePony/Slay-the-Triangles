@@ -15,12 +15,13 @@ radius = 25.0
 "collide",
 ]]
 
+z_index = 1
 input_pickable = true
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "collision" ]
+_sections_unfolded = [ "Collision", "Z Index", "collision" ]
 SPEED = 300
 attack = 10
 RELOAD_TIME = 0.15
@@ -116,6 +117,18 @@ audio_bus_name = "Master"
 position = Vector2( 25, 30 )
 scale = Vector2( 0.5, 0.666667 )
 shape = SubResource( 1 )
+
+[node name="pointer" type="Node2D" parent="." index="6"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="pointer" type="Sprite" parent="pointer" index="0"]
+
+position = Vector2( 15, 0 )
+scale = Vector2( 0.25, 0.25 )
+z_index = 1
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 

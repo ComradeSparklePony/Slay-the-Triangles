@@ -8,6 +8,8 @@ export (float) var RELOAD_TIME
 export (int) var max_hp
 var hp
 
+var enemy_spawner
+
 var velocity = Vector2()
 
 export (PackedScene) var projectile
@@ -22,6 +24,7 @@ func _ready():
 	
 	$TextureProgress.max_value = max_hp
 	$TextureProgress.value = hp
+	enemy_spawner = get_parent().get_node("enemy-spawner")
 
 func _process(delta):
 	
@@ -29,6 +32,10 @@ func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT) and $Timer.time_left == 0:
 		add_child(projectile.instance())
 		$Timer.start()
+		
+	# point towards spawner
+	if get_parent().has_node("enemy-spawner"):
+		$pointer.look_at(enemy_spawner.position)
 	
 	velocity = Vector2()
 	

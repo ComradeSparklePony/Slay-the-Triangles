@@ -16,6 +16,8 @@ _sections_unfolded = [ "Collision", "Material", "Transform", "Visibility", "Z In
 [node name="walls" type="Node2D" parent="." index="1"]
 
 editor/display_folded = true
+z_index = 1
+_sections_unfolded = [ "Z Index" ]
 
 [node name="world-wall0" parent="walls" index="0" instance=ExtResource( 2 )]
 
