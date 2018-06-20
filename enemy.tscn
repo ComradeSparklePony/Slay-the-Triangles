@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://enemy.gd" type="Script" id=1]
 [ext_resource path="res://enemy-weapon.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=3]
-[ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=4]
-[ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=5]
+[ext_resource path="res://coins.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=4]
+[ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=5]
+[ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -25,10 +26,11 @@ SPEED = 250
 ATTACK = 5
 hp = 100
 enemy_weapon = ExtResource( 2 )
+coin = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
@@ -70,9 +72,9 @@ page = 0.0
 value = 0.0
 exp_edit = false
 rounded = false
-texture_under = ExtResource( 4 )
+texture_under = ExtResource( 5 )
 texture_over = null
-texture_progress = ExtResource( 5 )
+texture_progress = ExtResource( 6 )
 radial_fill_degrees = 360.0
 radial_center_offset = Vector2( 0, 0 )
 nine_patch_stretch = false

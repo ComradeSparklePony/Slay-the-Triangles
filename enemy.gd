@@ -9,6 +9,7 @@ var velocity
 var timer_active = false
 export (int) var hp
 export (PackedScene) var enemy_weapon
+export (PackedScene) var coin
 
 func _ready():
 	# basic variable setup
@@ -40,12 +41,15 @@ func _on_Area2D_area_entered(area):
 		hp -= player.attack
 		$TextureProgress.value = hp
 		if hp == 0:
+			for i in range(int(sqrt(ATTACK * SPEED))):
+				var new_coin = coin.instance()
+				new_coin.position = position
+				get_parent().add_child(new_coin)
 			queue_free()
 
 # create new weapon when neccecary
 func _on_Timer_timeout():
-	if has_node("enemy-spawner"):
-		$Timer.wait_time = rand_range(2, 10)
-		add_child(enemy_weapon.instance())
-		timer_active = false
+	$Timer.wait_time = rand_range(2, 10)
+	add_child(enemy_weapon.instance())
+	timer_active = false
 	

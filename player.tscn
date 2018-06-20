@@ -13,6 +13,7 @@ radius = 25.0
 
 [node name="player" type="KinematicBody2D" groups=[
 "collide",
+"player",
 ]]
 
 z_index = 1

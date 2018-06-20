@@ -8,6 +8,8 @@ export (float) var RELOAD_TIME
 export (int) var max_hp
 var hp
 
+var coins
+
 var enemy_spawner
 
 var velocity = Vector2()
@@ -25,6 +27,8 @@ func _ready():
 	$TextureProgress.max_value = max_hp
 	$TextureProgress.value = hp
 	enemy_spawner = get_parent().get_node("enemy-spawner")
+	
+	coins = 0
 
 func _process(delta):
 	
@@ -69,3 +73,6 @@ func _on_Area2D_area_entered(area):
 		$TextureProgress.value = hp
 		if hp == 0:
 			queue_free()
+	if area.is_in_group("coins"):
+		coins += 1
+		print(coins)
