@@ -44,7 +44,8 @@ func _on_Area2D_area_entered(area):
 
 # create new weapon when neccecary
 func _on_Timer_timeout():
-	$Timer.wait_time = rand_range(2, 10)
-	add_child(enemy_weapon.instance())
-	timer_active = false
+	if has_node("enemy-spawner"):
+		$Timer.wait_time = rand_range(2, 10)
+		add_child(enemy_weapon.instance())
+		timer_active = false
 	

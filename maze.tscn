@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://maze.gd" type="Script" id=1]
 [ext_resource path="res://world-wall.tscn" type="PackedScene" id=2]
-[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=3]
-[ext_resource path="res://player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://player.tscn" type="PackedScene" id=5]
 
 [node name="maze" type="Node2D" index="0"]
 
@@ -13,11 +14,21 @@ wall = ExtResource( 2 )
 MAZESIZE = 100
 TUNLEN = 10
 TUNNELS = 1000
+enemy = ExtResource( 3 )
 
-[node name="enemy-spawner" parent="." index="0" instance=ExtResource( 3 )]
+[node name="enemy-spawner" parent="." index="0" instance=ExtResource( 4 )]
 
 max_hp = 300
 
-[node name="player" parent="." index="1" instance=ExtResource( 4 )]
+[node name="player" parent="." index="1" instance=ExtResource( 5 )]
+
+[node name="Timer" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 5.0
+one_shot = false
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 

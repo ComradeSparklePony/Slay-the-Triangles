@@ -5,6 +5,7 @@ export (PackedScene) var wall
 export (int) var MAZESIZE
 export (int) var TUNLEN
 export (int) var TUNNELS
+export (PackedScene) var enemy
 
 # wall array contaisn where the walls are
 var wall_array
@@ -87,6 +88,9 @@ func _ready():
 			if wall_array[y][x] == 1 and not spawner_spawned:
 				$"enemy-spawner".position = Vector2(x, y) * 100
 				spawner_spawned = true
+				
+
+# shuffles arrays
 func shuffle(array):
 	var shuffle_array = []
 	while array.size() > 0:
@@ -95,3 +99,15 @@ func shuffle(array):
 		array.erase(item)
 	return shuffle_array
 	
+	
+
+# randomly place a new enemy just for excitement
+func _on_Timer_timeout():
+	var new_enemy = enemy.instance()
+	var enemy_spawned = false
+	for y in shuffle(range(MAZESIZE)):
+		for x in shuffle(range(MAZESIZE)):
+			if wall_array[y][x] == 1 and not enemy_spawned:
+				new_enemy.position = Vector2(x, y) * 100
+				enemy_spawned = true
+	add_child(new_enemy)

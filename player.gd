@@ -34,8 +34,11 @@ func _process(delta):
 		$Timer.start()
 		
 	# point towards spawner
-	if get_parent().has_node("enemy-spawner"):
-		$pointer.look_at(enemy_spawner.position)
+	if has_node("pointer"):
+		if get_parent().has_node("enemy-spawner"):
+			$pointer.look_at(enemy_spawner.position)
+		else:
+			$pointer.queue_free()
 	
 	velocity = Vector2()
 	
