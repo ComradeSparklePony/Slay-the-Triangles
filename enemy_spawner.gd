@@ -79,18 +79,18 @@ func _on_Area2D_area_entered(area):
 		hp -= player.attack
 		$TextureProgress.value = hp
 		if hp == 0:
+			# all this code does is slows down time and spawns coins dramatically.
 			slow_mo = true
 			var coin_amt = SPEED * 100
 			Engine.time_scale = 0.1
+			var size_scale_decrease = 1/coin_amt
 			for i in range(int(coin_amt)):
-				$Timer.wait_time = 0.01
+				$Timer.wait_time = 0.00000000001
 				var new_coin = coin.instance()
-				new_coin.position = position + Vector2(rand_range(-i, i), rand_range(-i, i))
+				new_coin.position = position + Vector2(rand_range(-i, i), rand_range(-i, i))/5
 				get_parent().add_child(new_coin)
 				$Timer.start()
 				yield($Timer,"timeout")
-				print(i)
-				print(Engine.time_scale)
 			Engine.time_scale = 1
 			queue_free()
 
