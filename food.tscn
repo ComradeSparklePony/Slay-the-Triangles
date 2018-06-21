@@ -1,15 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=1]
-[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=2]
+[ext_resource path="res://food.gd" type="Script" id=1]
+[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=2]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=3]
 
-[sub_resource type="CapsuleShape2D" id=1]
-
-custom_solver_bias = 0.0
-radius = 24.8932
-height = 27.4589
-
-[node name="Area2D" type="Area2D"]
+[node name="food" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -18,27 +13,31 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
+script = ExtResource( 1 )
+hp_restore = null
 
 [node name="visual" type="Node" parent="." index="0"]
 
 [node name="cir" type="Sprite" parent="visual" index="0"]
 
 scale = Vector2( 0.9, 1 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="tri" type="Sprite" parent="visual" index="1"]
 
 position = Vector2( 0, 27 )
 scale = Vector2( 1, -1.1 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
 
-position = Vector2( 0, 15 )
 z_index = 1
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform", "Z Index" ]
+build_mode = 0
+polygon = PoolVector2Array( 0, 55, 27, 0, 0, -30, -27, 0 )
+_sections_unfolded = [ "Z Index" ]
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
 
 

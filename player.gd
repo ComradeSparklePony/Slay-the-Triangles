@@ -70,6 +70,6 @@ func _on_Area2D_area_entered(area):
 		# gets the enemy's attack
 		var enemy_ATTACK = area.get_parent().ATTACK
 		hp -= enemy_ATTACK
-		$TextureProgress.value = hp
 		if hp == 0:
 			queue_free()
+	$TextureProgress.value = hp
