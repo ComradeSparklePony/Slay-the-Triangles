@@ -17,11 +17,13 @@ points = PoolVector2Array( 0, -25, 25, 25, -25, 25 )
 "kill_proj",
 ]]
 
+z_index = 1
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
 SPEED = 250
 ATTACK = 5
 hp = 100
