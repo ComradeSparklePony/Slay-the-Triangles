@@ -32,6 +32,9 @@ func _ready():
 
 func _process(delta):
 	
+	#update textureprogress
+	$TextureProgress.value = hp
+	
 	# create projectile
 	if Input.is_mouse_button_pressed(BUTTON_LEFT) and $Timer.time_left == 0:
 		add_child(projectile.instance())
@@ -70,6 +73,5 @@ func _on_Area2D_area_entered(area):
 		# gets the enemy's attack
 		var enemy_ATTACK = area.get_parent().ATTACK
 		hp -= enemy_ATTACK
-		$TextureProgress.value = hp
 		if hp == 0:
 			queue_free()

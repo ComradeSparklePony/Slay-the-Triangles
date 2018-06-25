@@ -5,6 +5,8 @@ export (PackedScene) var wall
 export (int) var MAZESIZE
 export (int) var TUNLEN
 export (int) var TUNNELS
+export (int) var FOOD_NUM
+export (PackedScene) var food
 export (PackedScene) var enemy
 
 # wall array contaisn where the walls are
@@ -61,17 +63,28 @@ func _ready():
 	# PLACE WALLS
 	
 	maze_point = Vector2(0,0)
-	var new_wall
+
 	
 	for y in wall_array:
 		for x in y:
 			if x == 0:
-				new_wall = wall.instance()
+				var new_wall = wall.instance()
 				new_wall.position = maze_point
 				add_child(new_wall)
 			maze_point.x += 100
+				
 		maze_point.y += 100
 		maze_point.x = 0
+	
+	var foods_created = 0
+	while foods_created < FOOD_NUM:
+		var x = randi() % MAZESIZE
+		var y = randi() % MAZESIZE
+		if wall_array[y][x] ==1:
+			var new_food = food.instance()
+			new_food.position = Vector2(x, y) * 100
+			add_child(new_food)
+			foods_created += 1
 	
 	#spawn player at an open area
 	var player_spawned = false
