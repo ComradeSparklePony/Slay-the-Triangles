@@ -14,8 +14,8 @@ points = PoolVector2Array( 0, -25, 25, 25, -25, 25 )
 
 [node name="enemy" type="KinematicBody2D" groups=[
 "collide",
-"kill_proj",
 "enemy",
+"kill_proj",
 ]]
 
 z_index = 1

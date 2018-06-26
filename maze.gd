@@ -1,13 +1,15 @@
 extends Node2D
 
 # packedscenes and metavars
-export (PackedScene) var wall
 export (int) var MAZESIZE
 export (int) var TUNLEN
 export (int) var TUNNELS
 export (int) var FOOD_NUM
+export (int) var CHEST_NUM
 export (PackedScene) var food
 export (PackedScene) var enemy
+export (PackedScene) var chest
+export (PackedScene) var wall
 
 # wall array contaisn where the walls are
 var wall_array
@@ -86,6 +88,16 @@ func _ready():
 			add_child(new_food)
 			foods_created += 1
 	
+	var chests_created = 0
+	while chests_created < CHEST_NUM:
+		var x = randi() % MAZESIZE
+		var y = randi() % MAZESIZE
+		if wall_array[y][x] ==1:
+			var new_chest = chest.instance()
+			new_chest.position = Vector2(x, y) * 100
+			add_child(new_chest)
+			chests_created += 1
+	
 	#spawn player at an open area
 	var player_spawned = false
 	for y in shuffle(range(MAZESIZE)):
@@ -94,7 +106,7 @@ func _ready():
 				$player.position = Vector2(x, y) * 100
 				player_spawned = true
 				
-	#spawn spawner at open area at opposite corner
+	#spawn spawner at open area randomly
 	var spawner_spawned = false
 	for y in shuffle(range(MAZESIZE)):
 		for x in shuffle(range(MAZESIZE)):
