@@ -1,7 +1,6 @@
 extends Area2D
 
 export (int) var hp_restore
-export (int) var ROT_SPEED
 
 var direction = 1
 
