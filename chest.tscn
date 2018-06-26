@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://chest.gd" type="Script" id=1]
+[ext_resource path="res://coins.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=3]
+[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 25, 25 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 25.0
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 25, 5 )
+
+[node name="chest" type="Area2D"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+coin_num = 125
+coin = ExtResource( 2 )
+
+[node name="visual" type="Node2D" parent="." index="0"]
+
+[node name="Sprite2" type="Sprite" parent="visual" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="visual" index="1"]
+
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="2"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" index="1"]
+
+position = Vector2( 0, 20 )
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[connection signal="area_entered" from="." to="." method="_on_chest_area_entered"]
+
+

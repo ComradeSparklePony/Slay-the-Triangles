@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://projectile.gd" type="Script" id=1]
-[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=2]
+[ext_resource path="res://enemy-weapon.gd" type="Script" id=1]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=2]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 13.0005
+points = PoolVector2Array( 0, -62.5, 12.5, -37.5, -12.5, -37.5 )
 
-[node name="projectile" type="Area2D" groups=[
-"collide",
-"projectile",
+[node name="enemy-weapon" type="Area2D" groups=[
+"enemy_weapon",
+"kill_proj",
 ]]
 
 input_pickable = true
@@ -18,15 +18,14 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision_mask = 0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision" ]
-SPEED = 750
+ROT_SPEED = 30
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
+position = Vector2( 0, -50 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
@@ -35,6 +34,6 @@ _sections_unfolded = [ "Transform" ]
 
 shape = SubResource( 1 )
 
-[connection signal="body_entered" from="." to="." method="_on_projectile_body_entered"]
+[connection signal="area_entered" from="." to="." method="_on_enemyweapon_area_entered"]
 
 
