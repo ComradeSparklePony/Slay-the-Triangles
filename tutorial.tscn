@@ -1,0 +1,1290 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://world-wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=3]
+
+[node name="tutorial" type="Node2D" index="0"]
+
+[node name="walls (SLAY)" type="Node2D" parent="." index="0"]
+
+editor/display_folded = true
+
+[node name="world-wall" parent="walls (SLAY)" index="0" instance=ExtResource( 1 )]
+
+[node name="world-wall2" parent="walls (SLAY)" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 100, 0 )
+
+[node name="world-wall3" parent="walls (SLAY)" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 200, 0 )
+
+[node name="world-wall4" parent="walls (SLAY)" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 0, 90 )
+
+[node name="world-wall5" parent="walls (SLAY)" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 0, 190 )
+
+[node name="world-wall6" parent="walls (SLAY)" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 100, 190 )
+
+[node name="world-wall7" parent="walls (SLAY)" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 200, 190 )
+
+[node name="world-wall8" parent="walls (SLAY)" index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 400, 190 )
+
+[node name="world-wall10" parent="walls (SLAY)" index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 400, 90 )
+
+[node name="world-wall11" parent="walls (SLAY)" index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 400, 0 )
+
+[node name="world-wall12" parent="walls (SLAY)" index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 400, -90 )
+
+[node name="world-wall13" parent="walls (SLAY)" index="11" instance=ExtResource( 1 )]
+
+position = Vector2( 400, -190 )
+
+[node name="world-wall14" parent="walls (SLAY)" index="12" instance=ExtResource( 1 )]
+
+position = Vector2( 300, -190 )
+
+[node name="world-wall15" parent="walls (SLAY)" index="13" instance=ExtResource( 1 )]
+
+position = Vector2( 200, -190 )
+
+[node name="world-wall16" parent="walls (SLAY)" index="14" instance=ExtResource( 1 )]
+
+position = Vector2( 0, -200 )
+
+[node name="world-wall18" parent="walls (SLAY)" index="15" instance=ExtResource( 1 )]
+
+position = Vector2( 0, -300 )
+
+[node name="world-wall19" parent="walls (SLAY)" index="16" instance=ExtResource( 1 )]
+
+position = Vector2( 0, -400 )
+
+[node name="world-wall20" parent="walls (SLAY)" index="17" instance=ExtResource( 1 )]
+
+position = Vector2( 100, -400 )
+
+[node name="world-wall21" parent="walls (SLAY)" index="18" instance=ExtResource( 1 )]
+
+position = Vector2( 200, -400 )
+
+[node name="world-wall22" parent="walls (SLAY)" index="19" instance=ExtResource( 1 )]
+
+position = Vector2( 300, -400 )
+
+[node name="world-wall23" parent="walls (SLAY)" index="20" instance=ExtResource( 1 )]
+
+position = Vector2( 400, -400 )
+
+[node name="world-wall25" parent="walls (SLAY)" index="21" instance=ExtResource( 1 )]
+
+position = Vector2( 490, -400 )
+
+[node name="world-wall26" parent="walls (SLAY)" index="22" instance=ExtResource( 1 )]
+
+position = Vector2( 590, -400 )
+
+[node name="world-wall27" parent="walls (SLAY)" index="23" instance=ExtResource( 1 )]
+
+position = Vector2( 590, -300 )
+
+[node name="world-wall28" parent="walls (SLAY)" index="24" instance=ExtResource( 1 )]
+
+position = Vector2( 590, -200 )
+
+[node name="world-wall29" parent="walls (SLAY)" index="25" instance=ExtResource( 1 )]
+
+position = Vector2( 590, -100 )
+
+[node name="world-wall30" parent="walls (SLAY)" index="26" instance=ExtResource( 1 )]
+
+position = Vector2( 590, 0 )
+
+[node name="world-wall31" parent="walls (SLAY)" index="27" instance=ExtResource( 1 )]
+
+position = Vector2( 600, 190 )
+
+[node name="world-wall33" parent="walls (SLAY)" index="28" instance=ExtResource( 1 )]
+
+position = Vector2( 700, 190 )
+
+[node name="world-wall34" parent="walls (SLAY)" index="29" instance=ExtResource( 1 )]
+
+position = Vector2( 690, 0 )
+
+[node name="world-wall35" parent="walls (SLAY)" index="30" instance=ExtResource( 1 )]
+
+position = Vector2( 800, 190 )
+
+[node name="world-wall36" parent="walls (SLAY)" index="31" instance=ExtResource( 1 )]
+
+position = Vector2( 790, 0 )
+
+[node name="world-wall37" parent="walls (SLAY)" index="32" instance=ExtResource( 1 )]
+
+position = Vector2( 790, -100 )
+
+[node name="world-wall38" parent="walls (SLAY)" index="33" instance=ExtResource( 1 )]
+
+position = Vector2( 790, -200 )
+
+[node name="world-wall39" parent="walls (SLAY)" index="34" instance=ExtResource( 1 )]
+
+position = Vector2( 790, -400 )
+
+[node name="world-wall41" parent="walls (SLAY)" index="35" instance=ExtResource( 1 )]
+
+position = Vector2( 690, -400 )
+
+[node name="world-wall40" parent="walls (SLAY)" index="36" instance=ExtResource( 1 )]
+
+position = Vector2( 790, -300 )
+
+[node name="world-wall43" parent="walls (SLAY)" index="37" instance=ExtResource( 1 )]
+
+position = Vector2( 690, -300 )
+
+[node name="world-wall44" parent="walls (SLAY)" index="38" instance=ExtResource( 1 )]
+
+position = Vector2( 690, -200 )
+
+[node name="world-wall45" parent="walls (SLAY)" index="39" instance=ExtResource( 1 )]
+
+position = Vector2( 690, -100 )
+
+[node name="world-wall32" parent="walls (SLAY)" index="40" instance=ExtResource( 1 )]
+
+position = Vector2( 500, 190 )
+
+[node name="world-wall17" parent="walls (SLAY)" index="41" instance=ExtResource( 1 )]
+
+position = Vector2( 0, -100 )
+
+[node name="world-wall9" parent="walls (SLAY)" index="42" instance=ExtResource( 1 )]
+
+position = Vector2( 300, 190 )
+
+[node name="world-wall24" parent="walls (SLAY)" index="43" instance=ExtResource( 1 )]
+
+position = Vector2( 890, 190 )
+
+[node name="world-wall42" parent="walls (SLAY)" index="44" instance=ExtResource( 1 )]
+
+position = Vector2( 990, 190 )
+
+[node name="world-wall46" parent="walls (SLAY)" index="45" instance=ExtResource( 1 )]
+
+position = Vector2( 990, 100 )
+
+[node name="world-wall47" parent="walls (SLAY)" index="46" instance=ExtResource( 1 )]
+
+position = Vector2( 990, 0 )
+
+[node name="world-wall49" parent="walls (SLAY)" index="47" instance=ExtResource( 1 )]
+
+position = Vector2( 890, -400 )
+
+[node name="world-wall50" parent="walls (SLAY)" index="48" instance=ExtResource( 1 )]
+
+position = Vector2( 990, -400 )
+
+[node name="world-wall51" parent="walls (SLAY)" index="49" instance=ExtResource( 1 )]
+
+position = Vector2( 1090, -400 )
+
+[node name="world-wall52" parent="walls (SLAY)" index="50" instance=ExtResource( 1 )]
+
+position = Vector2( 990, -200 )
+
+[node name="world-wall53" parent="walls (SLAY)" index="51" instance=ExtResource( 1 )]
+
+position = Vector2( 1190, -400 )
+
+[node name="world-wall55" parent="walls (SLAY)" index="52" instance=ExtResource( 1 )]
+
+position = Vector2( 1190, -200 )
+
+[node name="world-wall56" parent="walls (SLAY)" index="53" instance=ExtResource( 1 )]
+
+position = Vector2( 1190, -100 )
+
+[node name="world-wall57" parent="walls (SLAY)" index="54" instance=ExtResource( 1 )]
+
+position = Vector2( 1190, 0 )
+
+[node name="world-wall61" parent="walls (SLAY)" index="55" instance=ExtResource( 1 )]
+
+position = Vector2( 1090, 190 )
+
+[node name="world-wall60" parent="walls (SLAY)" index="56" instance=ExtResource( 1 )]
+
+position = Vector2( 1190, 90 )
+
+[node name="world-wall62" parent="walls (SLAY)" index="57" instance=ExtResource( 1 )]
+
+position = Vector2( 1190, 190 )
+
+[node name="world-wall63" parent="walls (SLAY)" index="58" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, -400 )
+
+[node name="world-wall64" parent="walls (SLAY)" index="59" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, -400 )
+
+[node name="world-wall65" parent="walls (SLAY)" index="60" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, -300 )
+
+[node name="world-wall66" parent="walls (SLAY)" index="61" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, -200 )
+
+[node name="world-wall67" parent="walls (SLAY)" index="62" instance=ExtResource( 1 )]
+
+position = Vector2( 1490, -400 )
+
+[node name="world-wall68" parent="walls (SLAY)" index="63" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, -400 )
+
+[node name="world-wall69" parent="walls (SLAY)" index="64" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, -300 )
+
+[node name="world-wall70" parent="walls (SLAY)" index="65" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, -200 )
+
+[node name="world-wall71" parent="walls (SLAY)" index="66" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, -100 )
+
+[node name="world-wall76" parent="walls (SLAY)" index="67" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 0 )
+
+[node name="world-wall77" parent="walls (SLAY)" index="68" instance=ExtResource( 1 )]
+
+position = Vector2( 1490, 0 )
+
+[node name="world-wall78" parent="walls (SLAY)" index="69" instance=ExtResource( 1 )]
+
+position = Vector2( 1490, 90 )
+
+[node name="world-wall79" parent="walls (SLAY)" index="70" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 100 )
+
+[node name="world-wall80" parent="walls (SLAY)" index="71" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 190 )
+
+[node name="world-wall81" parent="walls (SLAY)" index="72" instance=ExtResource( 1 )]
+
+position = Vector2( 1490, 190 )
+
+[node name="world-wall73" parent="walls (SLAY)" index="73" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 0 )
+
+[node name="world-wall74" parent="walls (SLAY)" index="74" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 100 )
+
+[node name="world-wall75" parent="walls (SLAY)" index="75" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 190 )
+
+[node name="player" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 90, 100 )
+
+[node name="walls (THE)" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
+
+[node name="world-wall" parent="walls (THE)" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 290 )
+
+[node name="world-wall3" parent="walls (THE)" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 190 )
+
+[node name="world-wall26" parent="walls (THE)" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 1790, 190 )
+
+[node name="world-wall27" parent="walls (THE)" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 1890, 190 )
+
+[node name="world-wall28" parent="walls (THE)" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 1890, 290 )
+
+[node name="world-wall29" parent="walls (THE)" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 1890, 390 )
+
+[node name="world-wall30" parent="walls (THE)" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 1890, 690 )
+
+[node name="world-wall32" parent="walls (THE)" index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 1790, 790 )
+
+[node name="world-wall33" parent="walls (THE)" index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 1890, 790 )
+
+[node name="world-wall34" parent="walls (THE)" index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 1990, 790 )
+
+[node name="world-wall35" parent="walls (THE)" index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 2090, 790 )
+
+[node name="world-wall42" parent="walls (THE)" index="11" instance=ExtResource( 1 )]
+
+position = Vector2( 2190, 790 )
+
+[node name="world-wall43" parent="walls (THE)" index="12" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 790 )
+
+[node name="world-wall44" parent="walls (THE)" index="13" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 890 )
+
+[node name="world-wall45" parent="walls (THE)" index="14" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 790 )
+
+[node name="world-wall46" parent="walls (THE)" index="15" instance=ExtResource( 1 )]
+
+position = Vector2( 2590, 790 )
+
+[node name="world-wall61" parent="walls (THE)" index="16" instance=ExtResource( 1 )]
+
+position = Vector2( 2590, 990 )
+
+[node name="world-wall62" parent="walls (THE)" index="17" instance=ExtResource( 1 )]
+
+position = Vector2( 2590, 1090 )
+
+[node name="world-wall63" parent="walls (THE)" index="18" instance=ExtResource( 1 )]
+
+position = Vector2( 2590, 1190 )
+
+[node name="world-wall64" parent="walls (THE)" index="19" instance=ExtResource( 1 )]
+
+position = Vector2( 2590, 1290 )
+
+[node name="world-wall65" parent="walls (THE)" index="20" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 1390 )
+
+[node name="world-wall77" parent="walls (THE)" index="21" instance=ExtResource( 1 )]
+
+position = Vector2( 2590, 1390 )
+
+[node name="world-wall78" parent="walls (THE)" index="22" instance=ExtResource( 1 )]
+
+position = Vector2( 2690, 1390 )
+
+[node name="world-wall79" parent="walls (THE)" index="23" instance=ExtResource( 1 )]
+
+position = Vector2( 2690, 1290 )
+
+[node name="world-wall80" parent="walls (THE)" index="24" instance=ExtResource( 1 )]
+
+position = Vector2( 2690, 1190 )
+
+[node name="world-wall81" parent="walls (THE)" index="25" instance=ExtResource( 1 )]
+
+position = Vector2( 2690, 1090 )
+
+[node name="world-wall82" parent="walls (THE)" index="26" instance=ExtResource( 1 )]
+
+position = Vector2( 2990, 1090 )
+
+[node name="world-wall83" parent="walls (THE)" index="27" instance=ExtResource( 1 )]
+
+position = Vector2( 2690, 990 )
+
+[node name="world-wall66" parent="walls (THE)" index="28" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 1290 )
+
+[node name="world-wall67" parent="walls (THE)" index="29" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 1190 )
+
+[node name="world-wall68" parent="walls (THE)" index="30" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 1090 )
+
+[node name="world-wall69" parent="walls (THE)" index="31" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 990 )
+
+[node name="world-wall70" parent="walls (THE)" index="32" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 990 )
+
+[node name="world-wall71" parent="walls (THE)" index="33" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 1090 )
+
+[node name="world-wall72" parent="walls (THE)" index="34" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 1190 )
+
+[node name="world-wall73" parent="walls (THE)" index="35" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 1290 )
+
+[node name="world-wall74" parent="walls (THE)" index="36" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 1390 )
+
+[node name="world-wall75" parent="walls (THE)" index="37" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 1390 )
+
+[node name="world-wall76" parent="walls (THE)" index="38" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 1390 )
+
+[node name="world-wall60" parent="walls (THE)" index="39" instance=ExtResource( 1 )]
+
+position = Vector2( 2690, 790 )
+
+[node name="world-wall84" parent="walls (THE)" index="40" instance=ExtResource( 1 )]
+
+position = Vector2( 2790, 790 )
+
+[node name="world-wall85" parent="walls (THE)" index="41" instance=ExtResource( 1 )]
+
+position = Vector2( 2890, 790 )
+
+[node name="world-wall86" parent="walls (THE)" index="42" instance=ExtResource( 1 )]
+
+position = Vector2( 2990, 790 )
+
+[node name="world-wall96" parent="walls (THE)" index="43" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 790 )
+
+[node name="world-wall97" parent="walls (THE)" index="44" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 890 )
+
+[node name="world-wall98" parent="walls (THE)" index="45" instance=ExtResource( 1 )]
+
+position = Vector2( 3190, 890 )
+
+[node name="world-wall103" parent="walls (THE)" index="46" instance=ExtResource( 1 )]
+
+position = Vector2( 3290, 890 )
+
+[node name="world-wall104" parent="walls (THE)" index="47" instance=ExtResource( 1 )]
+
+position = Vector2( 3390, 890 )
+
+[node name="world-wall105" parent="walls (THE)" index="48" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 990 )
+
+[node name="world-wall106" parent="walls (THE)" index="49" instance=ExtResource( 1 )]
+
+position = Vector2( 3390, 1090 )
+
+[node name="world-wall108" parent="walls (THE)" index="50" instance=ExtResource( 1 )]
+
+position = Vector2( 3190, 1090 )
+
+[node name="world-wall109" parent="walls (THE)" index="51" instance=ExtResource( 1 )]
+
+position = Vector2( 3190, 1190 )
+
+[node name="world-wall110" parent="walls (THE)" index="52" instance=ExtResource( 1 )]
+
+position = Vector2( 3190, 1290 )
+
+[node name="world-wall111" parent="walls (THE)" index="53" instance=ExtResource( 1 )]
+
+position = Vector2( 3190, 1490 )
+
+[node name="world-wall115" parent="walls (THE)" index="54" instance=ExtResource( 1 )]
+
+position = Vector2( 3290, 1490 )
+
+[node name="world-wall116" parent="walls (THE)" index="55" instance=ExtResource( 1 )]
+
+position = Vector2( 3390, 1490 )
+
+[node name="world-wall122" parent="walls (THE)" index="56" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 1490 )
+
+[node name="world-wall117" parent="walls (THE)" index="57" instance=ExtResource( 1 )]
+
+position = Vector2( 3390, 1290 )
+
+[node name="world-wall119" parent="walls (THE)" index="58" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 1290 )
+
+[node name="world-wall120" parent="walls (THE)" index="59" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 1190 )
+
+[node name="world-wall121" parent="walls (THE)" index="60" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 1190 )
+
+[node name="world-wall118" parent="walls (THE)" index="61" instance=ExtResource( 1 )]
+
+position = Vector2( 3390, 1190 )
+
+[node name="world-wall113" parent="walls (THE)" index="62" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 1490 )
+
+[node name="world-wall114" parent="walls (THE)" index="63" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 1490 )
+
+[node name="world-wall112" parent="walls (THE)" index="64" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 1090 )
+
+[node name="world-wall107" parent="walls (THE)" index="65" instance=ExtResource( 1 )]
+
+position = Vector2( 3490, 890 )
+
+[node name="world-wall99" parent="walls (THE)" index="66" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 1090 )
+
+[node name="world-wall100" parent="walls (THE)" index="67" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 1190 )
+
+[node name="world-wall101" parent="walls (THE)" index="68" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 1290 )
+
+[node name="world-wall102" parent="walls (THE)" index="69" instance=ExtResource( 1 )]
+
+position = Vector2( 3090, 1390 )
+
+[node name="world-wall87" parent="walls (THE)" index="70" instance=ExtResource( 1 )]
+
+position = Vector2( 2990, 890 )
+
+[node name="world-wall90" parent="walls (THE)" index="71" instance=ExtResource( 1 )]
+
+position = Vector2( 2890, 1190 )
+
+[node name="world-wall91" parent="walls (THE)" index="72" instance=ExtResource( 1 )]
+
+position = Vector2( 2890, 1290 )
+
+[node name="world-wall92" parent="walls (THE)" index="73" instance=ExtResource( 1 )]
+
+position = Vector2( 2990, 1390 )
+
+[node name="world-wall93" parent="walls (THE)" index="74" instance=ExtResource( 1 )]
+
+position = Vector2( 2890, 1390 )
+
+[node name="world-wall94" parent="walls (THE)" index="75" instance=ExtResource( 1 )]
+
+position = Vector2( 2790, 1390 )
+
+[node name="world-wall95" parent="walls (THE)" index="76" instance=ExtResource( 1 )]
+
+position = Vector2( 2790, 1390 )
+
+[node name="world-wall47" parent="walls (THE)" index="77" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 590 )
+
+[node name="world-wall48" parent="walls (THE)" index="78" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 590 )
+
+[node name="world-wall49" parent="walls (THE)" index="79" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 590 )
+
+[node name="world-wall50" parent="walls (THE)" index="80" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 390 )
+
+[node name="world-wall52" parent="walls (THE)" index="81" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 390 )
+
+[node name="world-wall53" parent="walls (THE)" index="82" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 490 )
+
+[node name="world-wall54" parent="walls (THE)" index="83" instance=ExtResource( 1 )]
+
+position = Vector2( 2190, 190 )
+
+[node name="world-wall55" parent="walls (THE)" index="84" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 190 )
+
+[node name="world-wall56" parent="walls (THE)" index="85" instance=ExtResource( 1 )]
+
+position = Vector2( 2390, 190 )
+
+[node name="world-wall57" parent="walls (THE)" index="86" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 190 )
+
+[node name="world-wall58" parent="walls (THE)" index="87" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 290 )
+
+[node name="world-wall51" parent="walls (THE)" index="88" instance=ExtResource( 1 )]
+
+position = Vector2( 2290, 390 )
+
+[node name="world-wall36" parent="walls (THE)" index="89" instance=ExtResource( 1 )]
+
+position = Vector2( 2090, 590 )
+
+[node name="world-wall37" parent="walls (THE)" index="90" instance=ExtResource( 1 )]
+
+position = Vector2( 2090, 490 )
+
+[node name="world-wall38" parent="walls (THE)" index="91" instance=ExtResource( 1 )]
+
+position = Vector2( 2090, 390 )
+
+[node name="world-wall39" parent="walls (THE)" index="92" instance=ExtResource( 1 )]
+
+position = Vector2( 2090, 290 )
+
+[node name="world-wall40" parent="walls (THE)" index="93" instance=ExtResource( 1 )]
+
+position = Vector2( 2090, 190 )
+
+[node name="world-wall41" parent="walls (THE)" index="94" instance=ExtResource( 1 )]
+
+position = Vector2( 1990, 190 )
+
+[node name="world-wall31" parent="walls (THE)" index="95" instance=ExtResource( 1 )]
+
+position = Vector2( 1890, 590 )
+
+[node name="world-wall4" parent="walls (THE)" index="96" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 390 )
+
+[node name="world-wall5" parent="walls (THE)" index="97" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, 390 )
+
+[node name="world-wall6" parent="walls (THE)" index="98" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 390 )
+
+[node name="world-wall7" parent="walls (THE)" index="99" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 390 )
+
+[node name="world-wall8" parent="walls (THE)" index="100" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 490 )
+
+[node name="world-wall9" parent="walls (THE)" index="101" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, 490 )
+
+[node name="world-wall10" parent="walls (THE)" index="102" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 490 )
+
+[node name="world-wall11" parent="walls (THE)" index="103" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 490 )
+
+[node name="world-wall24" parent="walls (THE)" index="104" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 590 )
+
+[node name="world-wall25" parent="walls (THE)" index="105" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 690 )
+
+[node name="world-wall12" parent="walls (THE)" index="106" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 590 )
+
+[node name="world-wall13" parent="walls (THE)" index="107" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 690 )
+
+[node name="world-wall14" parent="walls (THE)" index="108" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, 590 )
+
+[node name="world-wall15" parent="walls (THE)" index="109" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 590 )
+
+[node name="world-wall16" parent="walls (THE)" index="110" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 690 )
+
+[node name="world-wall17" parent="walls (THE)" index="111" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, 690 )
+
+[node name="world-wall18" parent="walls (THE)" index="112" instance=ExtResource( 1 )]
+
+position = Vector2( 1290, 790 )
+
+[node name="world-wall19" parent="walls (THE)" index="113" instance=ExtResource( 1 )]
+
+position = Vector2( 1390, 790 )
+
+[node name="world-wall20" parent="walls (THE)" index="114" instance=ExtResource( 1 )]
+
+position = Vector2( 1490, 790 )
+
+[node name="world-wall21" parent="walls (THE)" index="115" instance=ExtResource( 1 )]
+
+position = Vector2( 1590, 790 )
+
+[node name="world-wall22" parent="walls (THE)" index="116" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 790 )
+
+[node name="world-wall23" parent="walls (THE)" index="117" instance=ExtResource( 1 )]
+
+position = Vector2( 1690, 790 )
+
+[node name="walls (TRIANGLES)" type="Node2D" parent="." index="3"]
+
+[node name="world-wall" parent="walls (TRIANGLES)" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 2490, 690 )
+
+[node name="world-wall2" parent="walls (TRIANGLES)" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 3590, 1490 )
+
+[node name="world-wall3" parent="walls (TRIANGLES)" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 3690, 1490 )
+
+[node name="world-wall4" parent="walls (TRIANGLES)" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 3690, 1490 )
+
+[node name="world-wall5" parent="walls (TRIANGLES)" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 3790, 1490 )
+
+[node name="world-wall6" parent="walls (TRIANGLES)" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 3890, 1490 )
+
+[node name="world-wall7" parent="walls (TRIANGLES)" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 3990, 1490 )
+
+[node name="world-wall19" parent="walls (TRIANGLES)" index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 4090, 1490 )
+
+[node name="world-wall20" parent="walls (TRIANGLES)" index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 4190, 1490 )
+
+[node name="world-wall21" parent="walls (TRIANGLES)" index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 4390, 1490 )
+
+[node name="world-wall56" parent="walls (TRIANGLES)" index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 4490, 1590 )
+
+[node name="world-wall57" parent="walls (TRIANGLES)" index="11" instance=ExtResource( 1 )]
+
+position = Vector2( 4590, 1590 )
+
+[node name="world-wall58" parent="walls (TRIANGLES)" index="12" instance=ExtResource( 1 )]
+
+position = Vector2( 4690, 1590 )
+
+[node name="world-wall62" parent="walls (TRIANGLES)" index="13" instance=ExtResource( 1 )]
+
+position = Vector2( 4790, 1590 )
+
+[node name="world-wall64" parent="walls (TRIANGLES)" index="14" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 1490 )
+
+[node name="world-wall77" parent="walls (TRIANGLES)" index="15" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 1590 )
+
+[node name="world-wall78" parent="walls (TRIANGLES)" index="16" instance=ExtResource( 1 )]
+
+position = Vector2( 4990, 1590 )
+
+[node name="world-wall79" parent="walls (TRIANGLES)" index="17" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 1590 )
+
+[node name="world-wall80" parent="walls (TRIANGLES)" index="18" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 1590 )
+
+[node name="world-wall81" parent="walls (TRIANGLES)" index="19" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 1290 )
+
+[node name="world-wall82" parent="walls (TRIANGLES)" index="20" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 1390 )
+
+[node name="world-wall83" parent="walls (TRIANGLES)" index="21" instance=ExtResource( 1 )]
+
+position = Vector2( 5290, 1590 )
+
+[node name="world-wall84" parent="walls (TRIANGLES)" index="22" instance=ExtResource( 1 )]
+
+position = Vector2( 5290, 1390 )
+
+[node name="world-wall85" parent="walls (TRIANGLES)" index="23" instance=ExtResource( 1 )]
+
+position = Vector2( 5290, 1290 )
+
+[node name="world-wall86" parent="walls (TRIANGLES)" index="24" instance=ExtResource( 1 )]
+
+position = Vector2( 5290, 1190 )
+
+[node name="world-wall87" parent="walls (TRIANGLES)" index="25" instance=ExtResource( 1 )]
+
+position = Vector2( 5290, 1090 )
+
+[node name="world-wall88" parent="walls (TRIANGLES)" index="26" instance=ExtResource( 1 )]
+
+position = Vector2( 5290, 990 )
+
+[node name="world-wall89" parent="walls (TRIANGLES)" index="27" instance=ExtResource( 1 )]
+
+position = Vector2( 5390, 1590 )
+
+[node name="world-wall90" parent="walls (TRIANGLES)" index="28" instance=ExtResource( 1 )]
+
+position = Vector2( 5490, 1590 )
+
+[node name="world-wall91" parent="walls (TRIANGLES)" index="29" instance=ExtResource( 1 )]
+
+position = Vector2( 5590, 1590 )
+
+[node name="world-wall92" parent="walls (TRIANGLES)" index="30" instance=ExtResource( 1 )]
+
+position = Vector2( 5680, 1590 )
+
+[node name="world-wall93" parent="walls (TRIANGLES)" index="31" instance=ExtResource( 1 )]
+
+position = Vector2( 5680, 1490 )
+
+[node name="world-wall94" parent="walls (TRIANGLES)" index="32" instance=ExtResource( 1 )]
+
+position = Vector2( 5680, 1390 )
+
+[node name="world-wall95" parent="walls (TRIANGLES)" index="33" instance=ExtResource( 1 )]
+
+position = Vector2( 5680, 1290 )
+
+[node name="world-wall96" parent="walls (TRIANGLES)" index="34" instance=ExtResource( 1 )]
+
+position = Vector2( 5680, 1190 )
+
+[node name="world-wall98" parent="walls (TRIANGLES)" index="35" instance=ExtResource( 1 )]
+
+position = Vector2( 5690, 990 )
+
+[node name="world-wall106" parent="walls (TRIANGLES)" index="36" instance=ExtResource( 1 )]
+
+position = Vector2( 5790, 990 )
+
+[node name="world-wall107" parent="walls (TRIANGLES)" index="37" instance=ExtResource( 1 )]
+
+position = Vector2( 5890, 990 )
+
+[node name="world-wall108" parent="walls (TRIANGLES)" index="38" instance=ExtResource( 1 )]
+
+position = Vector2( 5990, 990 )
+
+[node name="world-wall109" parent="walls (TRIANGLES)" index="39" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 990 )
+
+[node name="world-wall110" parent="walls (TRIANGLES)" index="40" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 1090 )
+
+[node name="world-wall111" parent="walls (TRIANGLES)" index="41" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 1190 )
+
+[node name="world-wall112" parent="walls (TRIANGLES)" index="42" instance=ExtResource( 1 )]
+
+position = Vector2( 5990, 1190 )
+
+[node name="world-wall113" parent="walls (TRIANGLES)" index="43" instance=ExtResource( 1 )]
+
+position = Vector2( 5890, 1190 )
+
+[node name="world-wall114" parent="walls (TRIANGLES)" index="44" instance=ExtResource( 1 )]
+
+position = Vector2( 5780, 1390 )
+
+[node name="world-wall115" parent="walls (TRIANGLES)" index="45" instance=ExtResource( 1 )]
+
+position = Vector2( 5880, 1390 )
+
+[node name="world-wall116" parent="walls (TRIANGLES)" index="46" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 1390 )
+
+[node name="world-wall117" parent="walls (TRIANGLES)" index="47" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 1290 )
+
+[node name="world-wall118" parent="walls (TRIANGLES)" index="48" instance=ExtResource( 1 )]
+
+position = Vector2( 5771, 1590 )
+scale = Vector2( 1.59375, 1 )
+
+[node name="world-wall119" parent="walls (TRIANGLES)" index="49" instance=ExtResource( 1 )]
+
+position = Vector2( 5890, 1590 )
+
+[node name="world-wall120" parent="walls (TRIANGLES)" index="50" instance=ExtResource( 1 )]
+
+position = Vector2( 5990, 1590 )
+
+[node name="world-wall121" parent="walls (TRIANGLES)" index="51" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 1590 )
+
+[node name="world-wall122" parent="walls (TRIANGLES)" index="52" instance=ExtResource( 1 )]
+
+position = Vector2( 6090, 1490 )
+
+[node name="world-wall102" parent="walls (TRIANGLES)" index="53" instance=ExtResource( 1 )]
+
+position = Vector2( 5490, 1190 )
+
+[node name="world-wall104" parent="walls (TRIANGLES)" index="54" instance=ExtResource( 1 )]
+
+position = Vector2( 5590, 1390 )
+
+[node name="world-wall105" parent="walls (TRIANGLES)" index="55" instance=ExtResource( 1 )]
+
+position = Vector2( 5490, 1390 )
+
+[node name="world-wall103" parent="walls (TRIANGLES)" index="56" instance=ExtResource( 1 )]
+
+position = Vector2( 5590, 1190 )
+
+[node name="world-wall99" parent="walls (TRIANGLES)" index="57" instance=ExtResource( 1 )]
+
+position = Vector2( 5390, 990 )
+
+[node name="world-wall100" parent="walls (TRIANGLES)" index="58" instance=ExtResource( 1 )]
+
+position = Vector2( 5490, 990 )
+
+[node name="world-wall101" parent="walls (TRIANGLES)" index="59" instance=ExtResource( 1 )]
+
+position = Vector2( 5590, 990 )
+
+[node name="world-wall65" parent="walls (TRIANGLES)" index="60" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 1390 )
+
+[node name="world-wall59" parent="walls (TRIANGLES)" index="61" instance=ExtResource( 1 )]
+
+position = Vector2( 4690, 1390 )
+
+[node name="world-wall60" parent="walls (TRIANGLES)" index="62" instance=ExtResource( 1 )]
+
+position = Vector2( 4690, 1390 )
+
+[node name="world-wall66" parent="walls (TRIANGLES)" index="63" instance=ExtResource( 1 )]
+
+position = Vector2( 4590, 1390 )
+
+[node name="world-wall39" parent="walls (TRIANGLES)" index="64" instance=ExtResource( 1 )]
+
+position = Vector2( 4290, 1490 )
+
+[node name="world-wall22" parent="walls (TRIANGLES)" index="65" instance=ExtResource( 1 )]
+
+position = Vector2( 4390, 890 )
+
+[node name="world-wall35" parent="walls (TRIANGLES)" index="66" instance=ExtResource( 1 )]
+
+position = Vector2( 4590, 890 )
+
+[node name="world-wall45" parent="walls (TRIANGLES)" index="67" instance=ExtResource( 1 )]
+
+position = Vector2( 4690, 890 )
+
+[node name="world-wall46" parent="walls (TRIANGLES)" index="68" instance=ExtResource( 1 )]
+
+position = Vector2( 4790, 890 )
+
+[node name="world-wall47" parent="walls (TRIANGLES)" index="69" instance=ExtResource( 1 )]
+
+position = Vector2( 4790, 990 )
+
+[node name="world-wall48" parent="walls (TRIANGLES)" index="70" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 990 )
+
+[node name="world-wall49" parent="walls (TRIANGLES)" index="71" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 890 )
+
+[node name="world-wall50" parent="walls (TRIANGLES)" index="72" instance=ExtResource( 1 )]
+
+position = Vector2( 4990, 990 )
+
+[node name="world-wall67" parent="walls (TRIANGLES)" index="73" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 990 )
+
+[node name="world-wall68" parent="walls (TRIANGLES)" index="74" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 990 )
+
+[node name="world-wall69" parent="walls (TRIANGLES)" index="75" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 1090 )
+
+[node name="world-wall70" parent="walls (TRIANGLES)" index="76" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 1190 )
+
+[node name="world-wall75" parent="walls (TRIANGLES)" index="77" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 1290 )
+
+[node name="world-wall76" parent="walls (TRIANGLES)" index="78" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 1390 )
+
+[node name="world-wall73" parent="walls (TRIANGLES)" index="79" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 1190 )
+
+[node name="world-wall74" parent="walls (TRIANGLES)" index="80" instance=ExtResource( 1 )]
+
+position = Vector2( 5190, 1190 )
+
+[node name="world-wall71" parent="walls (TRIANGLES)" index="81" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 1090 )
+
+[node name="world-wall72" parent="walls (TRIANGLES)" index="82" instance=ExtResource( 1 )]
+
+position = Vector2( 5090, 1090 )
+
+[node name="world-wall53" parent="walls (TRIANGLES)" index="83" instance=ExtResource( 1 )]
+
+position = Vector2( 4790, 1190 )
+
+[node name="world-wall54" parent="walls (TRIANGLES)" index="84" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 1190 )
+
+[node name="world-wall55" parent="walls (TRIANGLES)" index="85" instance=ExtResource( 1 )]
+
+position = Vector2( 4690, 1190 )
+
+[node name="world-wall61" parent="walls (TRIANGLES)" index="86" instance=ExtResource( 1 )]
+
+position = Vector2( 4890, 1290 )
+
+[node name="world-wall63" parent="walls (TRIANGLES)" index="87" instance=ExtResource( 1 )]
+
+position = Vector2( 4590, 1290 )
+
+[node name="world-wall51" parent="walls (TRIANGLES)" index="88" instance=ExtResource( 1 )]
+
+position = Vector2( 4590, 1190 )
+
+[node name="world-wall52" parent="walls (TRIANGLES)" index="89" instance=ExtResource( 1 )]
+
+position = Vector2( 4590, 1190 )
+
+[node name="world-wall43" parent="walls (TRIANGLES)" index="90" instance=ExtResource( 1 )]
+
+position = Vector2( 4490, 890 )
+
+[node name="world-wall44" parent="walls (TRIANGLES)" index="91" instance=ExtResource( 1 )]
+
+position = Vector2( 4490, 890 )
+
+[node name="world-wall41" parent="walls (TRIANGLES)" index="92" instance=ExtResource( 1 )]
+
+position = Vector2( 4490, 990 )
+
+[node name="world-wall42" parent="walls (TRIANGLES)" index="93" instance=ExtResource( 1 )]
+
+position = Vector2( 4490, 990 )
+
+[node name="world-wall23" parent="walls (TRIANGLES)" index="94" instance=ExtResource( 1 )]
+
+position = Vector2( 4390, 1390 )
+
+[node name="world-wall24" parent="walls (TRIANGLES)" index="95" instance=ExtResource( 1 )]
+
+position = Vector2( 4390, 1180 )
+
+[node name="world-wall25" parent="walls (TRIANGLES)" index="96" instance=ExtResource( 1 )]
+
+position = Vector2( 4390, 1090 )
+
+[node name="world-wall26" parent="walls (TRIANGLES)" index="97" instance=ExtResource( 1 )]
+
+position = Vector2( 4390, 990 )
+
+[node name="world-wall27" parent="walls (TRIANGLES)" index="98" instance=ExtResource( 1 )]
+
+position = Vector2( 4290, 890 )
+
+[node name="world-wall28" parent="walls (TRIANGLES)" index="99" instance=ExtResource( 1 )]
+
+position = Vector2( 4190, 890 )
+
+[node name="world-wall29" parent="walls (TRIANGLES)" index="100" instance=ExtResource( 1 )]
+
+position = Vector2( 4090, 890 )
+
+[node name="world-wall30" parent="walls (TRIANGLES)" index="101" instance=ExtResource( 1 )]
+
+position = Vector2( 3990, 890 )
+
+[node name="world-wall31" parent="walls (TRIANGLES)" index="102" instance=ExtResource( 1 )]
+
+position = Vector2( 4190, 1400 )
+
+[node name="world-wall38" parent="walls (TRIANGLES)" index="103" instance=ExtResource( 1 )]
+
+position = Vector2( 4190, 1390 )
+
+[node name="world-wall40" parent="walls (TRIANGLES)" index="104" instance=ExtResource( 1 )]
+
+position = Vector2( 4090, 1390 )
+
+[node name="world-wall36" parent="walls (TRIANGLES)" index="105" instance=ExtResource( 1 )]
+
+position = Vector2( 4190, 990 )
+
+[node name="world-wall37" parent="walls (TRIANGLES)" index="106" instance=ExtResource( 1 )]
+
+position = Vector2( 4190, 1090 )
+
+[node name="world-wall34" parent="walls (TRIANGLES)" index="107" instance=ExtResource( 1 )]
+
+position = Vector2( 4090, 1290 )
+
+[node name="world-wall32" parent="walls (TRIANGLES)" index="108" instance=ExtResource( 1 )]
+
+position = Vector2( 4090, 990 )
+
+[node name="world-wall33" parent="walls (TRIANGLES)" index="109" instance=ExtResource( 1 )]
+
+position = Vector2( 4090, 990 )
+
+[node name="world-wall8" parent="walls (TRIANGLES)" index="110" instance=ExtResource( 1 )]
+
+position = Vector2( 3890, 1290 )
+
+[node name="world-wall9" parent="walls (TRIANGLES)" index="111" instance=ExtResource( 1 )]
+
+position = Vector2( 3890, 1190 )
+
+[node name="world-wall10" parent="walls (TRIANGLES)" index="112" instance=ExtResource( 1 )]
+
+position = Vector2( 3890, 1090 )
+
+[node name="world-wall11" parent="walls (TRIANGLES)" index="113" instance=ExtResource( 1 )]
+
+position = Vector2( 3890, 990 )
+
+[node name="world-wall12" parent="walls (TRIANGLES)" index="114" instance=ExtResource( 1 )]
+
+position = Vector2( 3890, 890 )
+
+[node name="world-wall13" parent="walls (TRIANGLES)" index="115" instance=ExtResource( 1 )]
+
+position = Vector2( 3790, 890 )
+
+[node name="world-wall14" parent="walls (TRIANGLES)" index="116" instance=ExtResource( 1 )]
+
+position = Vector2( 3690, 890 )
+
+[node name="world-wall15" parent="walls (TRIANGLES)" index="117" instance=ExtResource( 1 )]
+
+position = Vector2( 3590, 890 )
+
+[node name="world-wall16" parent="walls (TRIANGLES)" index="118" instance=ExtResource( 1 )]
+
+position = Vector2( 3690, 1390 )
+
+[node name="world-wall18" parent="walls (TRIANGLES)" index="119" instance=ExtResource( 1 )]
+
+position = Vector2( 3690, 1290 )
+
+[node name="world-wall17" parent="walls (TRIANGLES)" index="120" instance=ExtResource( 1 )]
+
+position = Vector2( 3690, 1090 )
+
+[node name="enemy" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 2980, 1000 )
+scale = Vector2( 1.5, 1.5 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+SPEED = 0
+ATTACK = 0
+
+

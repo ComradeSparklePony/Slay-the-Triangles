@@ -13,7 +13,6 @@ _sections_unfolded = [ "Transform" ]
 [node name="chest" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 695.635, 249.841 )
-coin_num = 125
 
 [node name="player" parent="." index="1" instance=ExtResource( 2 )]
 
