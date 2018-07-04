@@ -650,9 +650,38 @@ position = Vector2( 1800, -200 )
 
 [node name="player" parent="." index="1" instance=ExtResource( 2 )]
 
-[node name="citizen" parent="." index="2" instance=ExtResource( 3 )]
+[node name="citizens" type="Node2D" parent="." index="2"]
 
 position = Vector2( 300, -500 )
-message = "I've got a very important message for you."
+
+[node name="welcome" parent="citizens" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( -100, 400 )
+message = "Welcome to town! You are here: TOWN SQUARE"
+
+[node name="help_us" parent="citizens" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 600, -100 )
+message = "Please, defeat the Triangles so they never come back!"
+
+[node name="shopkeepe" parent="citizens" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 1000, 400 )
+message = "Welcome to the shop! Step on a platform to pay to upgrade a stat!"
+
+[node name="doctor" parent="citizens" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 1700, 300 )
+message = "Welcome to the hospital! Step on a platform to heal, free of charge!"
+
+[node name="soldier" parent="citizens" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 2000, 400 )
+message = "Welcome to the barracks! You can practice fighting here!"
+
+[node name="warn" parent="citizens" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 2900, 400 )
+message = "Beware! Triangles beyond!"
 
 
