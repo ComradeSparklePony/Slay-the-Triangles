@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://enemy_spawner.gd" type="Script" id=1]
 [ext_resource path="res://enemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://coins.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=4]
-[ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=5]
-[ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=6]
+[ext_resource path="res://teleport.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=5]
+[ext_resource path="res://assets/red_rect_50x10px.png" type="Texture" id=6]
+[ext_resource path="res://assets/green_rect_50x10px.png" type="Texture" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -31,6 +32,7 @@ ROT_SPEED = 7
 SPEED = 3
 max_hp = 300
 coin = ExtResource( 3 )
+teleport = ExtResource( 4 )
 
 [node name="tri1" type="CollisionShape2D" parent="." index="0"]
 
@@ -38,7 +40,7 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="tri1" index="0"]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="tri2" type="CollisionShape2D" parent="." index="1"]
 
@@ -46,7 +48,7 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="tri2" index="0"]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="Timer" type="Timer" parent="." index="2"]
 
@@ -77,9 +79,9 @@ page = 0.0
 value = 0.0
 exp_edit = false
 rounded = false
-texture_under = ExtResource( 5 )
+texture_under = ExtResource( 6 )
 texture_over = null
-texture_progress = ExtResource( 6 )
+texture_progress = ExtResource( 7 )
 radial_fill_degrees = 360.0
 radial_center_offset = Vector2( 0, 0 )
 nine_patch_stretch = false

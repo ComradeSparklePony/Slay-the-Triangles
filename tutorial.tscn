@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://tutorial.gd" type="Script" id=1]
 [ext_resource path="res://world-wall.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=5]
 [ext_resource path="res://chest.tscn" type="PackedScene" id=6]
 [ext_resource path="res://food.tscn" type="PackedScene" id=7]
+[ext_resource path="res://teleport.tscn" type="PackedScene" id=8]
 
 [node name="tutorial" type="Node2D" index="0"]
 
@@ -1304,6 +1305,8 @@ ATTACK = 0
 
 [node name="walls (cover)" type="Node2D" parent="." index="5"]
 
+editor/display_folded = true
+
 [node name="world-wall" parent="walls (cover)" index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 370, 670 )
@@ -1626,5 +1629,10 @@ position = Vector2( -2080, 160 )
 
 position = Vector2( 4670, 1280 )
 hp_restore = 20
+
+[node name="teleport" parent="." index="10" instance=ExtResource( 8 )]
+
+position = Vector2( 5760, 1490 )
+SCENE_TO = "res://town.tscn"
 
 

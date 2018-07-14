@@ -14,6 +14,7 @@ export (int) var max_hp
 var hp
 
 export (PackedScene) var coin
+export (PackedScene) var teleport
 
 var slow_mo = false
 
@@ -90,6 +91,10 @@ func _on_Area2D_area_entered(area):
 				#$Timer.start()
 				#yield($Timer,"timeout")
 			#Engine.time_scale = 1
+			var new_teleport = teleport.instance()
+			new_teleport.SCENE_TO = "res://town.tscn"
+			new_teleport.position = position
+			get_parent().add_child(new_teleport)
 			queue_free()
 
 		if first_hit:

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://world-wall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://citizen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://teleport.tscn" type="PackedScene" id=4]
 
 [node name="town" type="Node2D"]
 
@@ -652,6 +653,7 @@ position = Vector2( 1800, -200 )
 
 [node name="citizens" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 300, -500 )
 
 [node name="welcome" parent="citizens" index="0" instance=ExtResource( 3 )]
@@ -683,5 +685,10 @@ message = "Welcome to the barracks! You can practice fighting here!"
 
 position = Vector2( 2900, 400 )
 message = "Beware! Triangles beyond!"
+
+[node name="teleport" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 3600, 0 )
+SCENE_TO = "res://maze.tscn"
 
 
