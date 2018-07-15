@@ -5,7 +5,7 @@ extends Node
 # var b = "textvar"
 
 func _ready():
-	get_tree().change_scene("res://tutorial.tscn")
+	get_tree().change_scene("res://menu.tscn")
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.

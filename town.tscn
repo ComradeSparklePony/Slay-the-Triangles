@@ -5,13 +5,11 @@
 [ext_resource path="res://citizen.tscn" type="PackedScene" id=3]
 [ext_resource path="res://teleport.tscn" type="PackedScene" id=4]
 
-[node name="town" type="Node2D"]
+[node name="town" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Transform" ]
 
 [node name="walls" type="Node2D" parent="." index="0"]
-
-editor/display_folded = true
 
 [node name="world-wall" parent="walls" index="0" instance=ExtResource( 1 )]
 
@@ -23,7 +21,7 @@ position = Vector2( -100, 0 )
 
 [node name="world-wall3" parent="walls" index="2" instance=ExtResource( 1 )]
 
-position = Vector2( 0, 100 )
+position = Vector2( -100, 100 )
 
 [node name="world-wall4" parent="walls" index="3" instance=ExtResource( 1 )]
 
@@ -231,19 +229,19 @@ position = Vector2( 1300, -300 )
 
 [node name="world-wall36" parent="walls" index="54" instance=ExtResource( 1 )]
 
-position = Vector2( 1400, -900 )
+position = Vector2( 1400, -999.988 )
 
 [node name="world-wall37" parent="walls" index="55" instance=ExtResource( 1 )]
 
-position = Vector2( 1500, -900 )
+position = Vector2( 1500, -999.988 )
 
 [node name="world-wall38" parent="walls" index="56" instance=ExtResource( 1 )]
 
-position = Vector2( 1600, -900 )
+position = Vector2( 1600, -999.988 )
 
 [node name="world-wall39" parent="walls" index="57" instance=ExtResource( 1 )]
 
-position = Vector2( 1700, -900 )
+position = Vector2( 1700, -999.988 )
 
 [node name="world-wall40" parent="walls" index="58" instance=ExtResource( 1 )]
 
@@ -591,39 +589,39 @@ position = Vector2( 1800, -300 )
 
 [node name="world-wall47" parent="walls" index="144" instance=ExtResource( 1 )]
 
-position = Vector2( 1700, -700 )
+position = Vector2( 1700, -799.988 )
 
 [node name="world-wall48" parent="walls" index="145" instance=ExtResource( 1 )]
 
-position = Vector2( 1600, -700 )
+position = Vector2( 1600, -799.988 )
 
 [node name="world-wall49" parent="walls" index="146" instance=ExtResource( 1 )]
 
-position = Vector2( 1500, -700 )
+position = Vector2( 1500, -799.988 )
 
 [node name="world-wall50" parent="walls" index="147" instance=ExtResource( 1 )]
 
-position = Vector2( 1700, -500 )
+position = Vector2( 1700, -599.988 )
 
 [node name="world-wall51" parent="walls" index="148" instance=ExtResource( 1 )]
 
-position = Vector2( 1600, -500 )
+position = Vector2( 1600, -599.988 )
 
 [node name="world-wall52" parent="walls" index="149" instance=ExtResource( 1 )]
 
-position = Vector2( 1500, -500 )
+position = Vector2( 1500, -599.988 )
 
 [node name="world-wall53" parent="walls" index="150" instance=ExtResource( 1 )]
 
-position = Vector2( 1700, -300 )
+position = Vector2( 1700, -399.988 )
 
 [node name="world-wall54" parent="walls" index="151" instance=ExtResource( 1 )]
 
-position = Vector2( 1600, -300 )
+position = Vector2( 1600, -399.988 )
 
 [node name="world-wall55" parent="walls" index="152" instance=ExtResource( 1 )]
 
-position = Vector2( 1500, -300 )
+position = Vector2( 1500, -399.988 )
 
 [node name="world-wall56" parent="walls" index="153" instance=ExtResource( 1 )]
 
@@ -631,15 +629,15 @@ position = Vector2( 1300, -200 )
 
 [node name="world-wall57" parent="walls" index="154" instance=ExtResource( 1 )]
 
-position = Vector2( 1500, -200 )
+position = Vector2( 1500.02, -200.07 )
 
 [node name="world-wall58" parent="walls" index="155" instance=ExtResource( 1 )]
 
-position = Vector2( 1600, -200 )
+position = Vector2( 1600.02, -200.07 )
 
 [node name="world-wall59" parent="walls" index="156" instance=ExtResource( 1 )]
 
-position = Vector2( 1700, -200 )
+position = Vector2( 1700.02, -200.07 )
 
 [node name="world-wall60" parent="walls" index="157" instance=ExtResource( 1 )]
 
@@ -653,7 +651,6 @@ position = Vector2( 1800, -200 )
 
 [node name="citizens" type="Node2D" parent="." index="2"]
 
-editor/display_folded = true
 position = Vector2( 300, -500 )
 
 [node name="welcome" parent="citizens" index="0" instance=ExtResource( 3 )]
@@ -668,7 +665,7 @@ message = "Please, defeat the Triangles so they never come back!"
 
 [node name="shopkeepe" parent="citizens" index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 1000, 400 )
+position = Vector2( 999.276, 400 )
 message = "Welcome to the shop! Step on a platform to pay to upgrade a stat!"
 
 [node name="doctor" parent="citizens" index="3" instance=ExtResource( 3 )]
@@ -684,7 +681,7 @@ message = "Welcome to the barracks! You can practice fighting here!"
 [node name="warn" parent="citizens" index="5" instance=ExtResource( 3 )]
 
 position = Vector2( 2900, 400 )
-message = "Beware! Triangles beyond!"
+message = "Beware! Triangles beyond! Teleport at your own risk!"
 
 [node name="teleport" parent="." index="3" instance=ExtResource( 4 )]
 

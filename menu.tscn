@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=1]
+[ext_resource path="res://menu.gd" type="Script" id=1]
+[ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=2]
 
-[node name="menu" type="Panel"]
+[node name="menu" type="Panel" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -14,6 +15,11 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 1 )
+player_hp = null
+player_attack = null
+attack_speed = null
+mvt_speed = null
 
 [node name="MarginContainer" type="MarginContainer" parent="." index="0"]
 
@@ -200,7 +206,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Size Flags" ]
