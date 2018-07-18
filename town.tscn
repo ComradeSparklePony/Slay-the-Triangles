@@ -5,7 +5,7 @@
 [ext_resource path="res://citizen.tscn" type="PackedScene" id=3]
 [ext_resource path="res://teleport.tscn" type="PackedScene" id=4]
 
-[node name="town" type="Node2D" index="0"]
+[node name="town" type="Node2D"]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -21,7 +21,7 @@ position = Vector2( -100, 0 )
 
 [node name="world-wall3" parent="walls" index="2" instance=ExtResource( 1 )]
 
-position = Vector2( -100, 100 )
+position = Vector2( 0, 100 )
 
 [node name="world-wall4" parent="walls" index="3" instance=ExtResource( 1 )]
 

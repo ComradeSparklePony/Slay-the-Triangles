@@ -16,10 +16,10 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
-player_hp = null
-player_attack = null
-attack_speed = null
-mvt_speed = null
+player_hp = 200
+player_attack = 10
+attack_speed = 0.15
+mvt_speed = 300
 
 [node name="MarginContainer" type="MarginContainer" parent="." index="0"]
 
@@ -210,5 +210,11 @@ texture = ExtResource( 2 )
 expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Size Flags" ]
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/new" to="." method="_on_new_pressed"]
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/load" to="." method="_on_load_pressed"]
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/exit" to="." method="_on_exit_pressed"]
 
 
