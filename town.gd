@@ -14,9 +14,8 @@ func _ready():
 	$player.attack = data["player_attack"]
 	$player.RELOAD_TIME = data["attack_speed"]
 	
+	completion = data["completion"]
 	save_file.close()
-	
-	$player.hp -= 20
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
