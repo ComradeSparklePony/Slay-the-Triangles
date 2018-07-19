@@ -22,18 +22,16 @@ func _ready():
 	save_file.open("user://data.save", File.READ)
 	var data = parse_json(save_file.get_line())
 	
-	max_hp = data["player_hp"]
-	hp = $player.max_hp
+	max_hp = data["player_max_hp"]
+	hp = data["player_hp"]
 	SPEED = data["mvt_speed"]
 	attack = data["player_attack"]
 	RELOAD_TIME = data["attack_speed"]
+	coins = data["coins"]
 	save_file.close()
 	# setup timer
 	$Timer.wait_time = RELOAD_TIME
 	$Timer.start()
-	
-	# prepare health bar
-	hp = max_hp
 	
 	$TextureProgress.max_value = max_hp
 	$TextureProgress.value = hp

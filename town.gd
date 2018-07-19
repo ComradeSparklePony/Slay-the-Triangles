@@ -2,6 +2,12 @@ extends Node2D
 
 var completion
 
+#upgrade vars
+export (int) var hp_upgrade
+export (int) var attack_upgrade
+export (float) var attack_spd_upgrade
+export (int) var speed
+
 func _ready():
 	#load the game
 	var save_file = File.new()
@@ -10,8 +16,3 @@ func _ready():
 	
 	completion = data["completion"]
 	save_file.close()
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass

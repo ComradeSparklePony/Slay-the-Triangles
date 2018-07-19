@@ -19,10 +19,11 @@ func _process(delta):
 func _on_new_pressed():
 	var save_data = {
 		"player_max_hp": player_hp,
-		"player_hp": player_hp,
+		"player_hp": player_hp - 20,
 		"player_attack": player_attack,
 		"attack_speed": attack_speed,
 		"mvt_speed": mvt_speed,
+		"coins": 0,
 		"completion": 0,
 		"difficulty": 0
 	}
