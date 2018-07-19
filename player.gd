@@ -17,6 +17,17 @@ var velocity = Vector2()
 export (PackedScene) var projectile
 
 func _ready():
+	#load the game
+	var save_file = File.new()
+	save_file.open("user://data.save", File.READ)
+	var data = parse_json(save_file.get_line())
+	
+	max_hp = data["player_hp"]
+	hp = $player.max_hp
+	SPEED = data["mvt_speed"]
+	attack = data["player_attack"]
+	RELOAD_TIME = data["attack_speed"]
+	save_file.close()
 	# setup timer
 	$Timer.wait_time = RELOAD_TIME
 	$Timer.start()

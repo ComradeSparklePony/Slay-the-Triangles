@@ -8,12 +8,6 @@ func _ready():
 	save_file.open("user://data.save", File.READ)
 	var data = parse_json(save_file.get_line())
 	
-	$player.max_hp = data["player_hp"]
-	$player.hp = $player.max_hp
-	$player.SPEED = data["mvt_speed"]
-	$player.attack = data["player_attack"]
-	$player.RELOAD_TIME = data["attack_speed"]
-	
 	completion = data["completion"]
 	save_file.close()
 
