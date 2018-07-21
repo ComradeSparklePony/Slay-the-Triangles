@@ -36,8 +36,6 @@ func _ready():
 	$TextureProgress.max_value = max_hp
 	$TextureProgress.value = hp
 	enemy_spawner = get_parent().get_node("enemy-spawner")
-	
-	coins = 0
 
 func _process(delta):
 	

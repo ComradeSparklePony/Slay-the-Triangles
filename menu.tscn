@@ -3,7 +3,7 @@
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/white_tri_50px.png" type="Texture" id=2]
 
-[node name="menu" type="Panel" index="0"]
+[node name="menu" type="Panel"]
 
 anchor_left = 0.0
 anchor_top = 0.0

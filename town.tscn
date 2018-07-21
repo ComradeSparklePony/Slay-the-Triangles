@@ -12,7 +12,7 @@
 custom_solver_bias = 0.0
 radius = 50.0
 
-[node name="town" type="Node2D"]
+[node name="town" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 hp_upgrade = null
@@ -720,7 +720,6 @@ position = Vector2( 1800, -200 )
 
 [node name="citizens" type="Node2D" parent="." index="2"]
 
-editor/display_folded = true
 position = Vector2( 300, -500 )
 
 [node name="welcome" parent="citizens" index="0" instance=ExtResource( 4 )]
@@ -736,7 +735,7 @@ message = "Please, defeat the Triangles so they never come back!"
 [node name="shopkeepe" parent="citizens" index="2" instance=ExtResource( 4 )]
 
 position = Vector2( 999.276, 400 )
-message = "Welcome to the shop! Step on a platform to pay to upgrade a stat!"
+message = "Welcome to the shop! Step on a platform to pay to upgrade a stat! Only 500 coins!"
 
 [node name="doctor" parent="citizens" index="3" instance=ExtResource( 4 )]
 
@@ -759,6 +758,8 @@ position = Vector2( 3600, 0 )
 SCENE_TO = "res://maze1.tscn"
 
 [node name="text" type="Node2D" parent="." index="4"]
+
+editor/display_folded = true
 
 [node name="maxhp" type="Label" parent="text" index="0"]
 
@@ -867,8 +868,6 @@ max_lines_visible = -1
 
 [node name="platforms" type="Node2D" parent="." index="5"]
 
-editor/display_folded = true
-
 [node name="hp_platform" type="Area2D" parent="platforms" index="0"]
 
 editor/display_folded = true
@@ -964,5 +963,13 @@ _sections_unfolded = [ "Transform" ]
 
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+[connection signal="body_entered" from="platforms/hp_platform" to="." method="_on_hp_platform_body_entered"]
+
+[connection signal="body_entered" from="platforms/attack_platform" to="." method="_on_attack_platform_body_entered"]
+
+[connection signal="body_entered" from="platforms/attack_spd_platform" to="." method="_on_attack_spd_platform_body_entered"]
+
+[connection signal="body_entered" from="platforms/speed_platform" to="." method="_on_speed_platform_body_entered"]
 
 

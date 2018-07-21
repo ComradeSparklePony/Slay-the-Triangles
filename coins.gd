@@ -10,6 +10,7 @@ func _ready():
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("player"):
 		body.coins += 1
+		print(body.coins)
 		queue_free()
 
 func _on_Timer_timeout():

@@ -25,7 +25,6 @@ func _on_new_pressed():
 		"mvt_speed": mvt_speed,
 		"coins": 0,
 		"completion": 0,
-		"difficulty": 0
 	}
 	var save_file = File.new()
 	save_file.open("user://data.save", File.WRITE)
