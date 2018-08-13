@@ -41,7 +41,7 @@ func _on_attack_platform_body_entered(body):
 			body.coins -= 500
 			body.attack += 10
 			$text/coins.text = "Your coins: " + str(body.coins)
-			$text/maxhp.text = "Current Attack: " + str(body.attack)
+			$text/attack.text = "Current Attack: " + str(body.attack)
 
 
 func _on_attack_spd_platform_body_entered(body):
@@ -50,13 +50,13 @@ func _on_attack_spd_platform_body_entered(body):
 			body.coins -= 500
 			body.RELOAD_TIME = body.RELOAD_TIME/ 1.5
 			$text/coins.text = "Your coins: " + str(body.coins)
-			$text/maxhp.text = "Current Attack Speed: " + str(body.RELOAD_TIME)
+			$text/attackspeed.text = "Current Attack Speed: " + str(body.RELOAD_TIME)
 
 
 func _on_speed_platform_body_entered(body):
 		if body.is_in_group("player"):
-			if body.coins >= 500:
+			if body.coins > 500:
 				body.coins -= 500
-				body.speed += 10
+				body.SPEED += 10
 				$text/coins.text = "Your coins: " + str(body.coins)
-				$text/maxhp.text = "Current Speed: " + str(body.speed)
+				$text/speed.text = "Current Speed: " + str(body.SPEED)
