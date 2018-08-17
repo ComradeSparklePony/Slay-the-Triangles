@@ -60,3 +60,9 @@ func _on_speed_platform_body_entered(body):
 				body.SPEED += 10
 				$text/coins.text = "Your coins: " + str(body.coins)
 				$text/speed.text = "Current Speed: " + str(body.SPEED)
+
+
+func _on_heal_platform_body_entered(body):
+	if body.is_in_group("player"):
+		body.hp = body.max_hp
+		body.get_node("TextureProgress").value = body.hp

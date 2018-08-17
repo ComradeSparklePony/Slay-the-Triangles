@@ -739,8 +739,8 @@ message = "Welcome to the shop! Step on a platform to pay to upgrade a stat! Onl
 
 [node name="doctor" parent="citizens" index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 1700, 300 )
-message = "Welcome to the hospital! Step on a platform to heal, free of charge!"
+position = Vector2( 1698.7, 300 )
+message = "Welcome to the hospital! Step on the platform to heal, free of charge!"
 
 [node name="soldier" parent="citizens" index="4" instance=ExtResource( 4 )]
 
@@ -964,6 +964,31 @@ _sections_unfolded = [ "Transform" ]
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
+[node name="heal_platform" type="Area2D" parent="platforms" index="4"]
+
+editor/display_folded = true
+position = Vector2( 1950, -800 )
+scale = Vector2( 2, 1 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="platforms/heal_platform" index="0"]
+
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/heal_platform" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
 [connection signal="body_entered" from="platforms/hp_platform" to="." method="_on_hp_platform_body_entered"]
 
 [connection signal="body_entered" from="platforms/attack_platform" to="." method="_on_attack_platform_body_entered"]
@@ -971,5 +996,7 @@ _sections_unfolded = [ "Transform" ]
 [connection signal="body_entered" from="platforms/attack_spd_platform" to="." method="_on_attack_spd_platform_body_entered"]
 
 [connection signal="body_entered" from="platforms/speed_platform" to="." method="_on_speed_platform_body_entered"]
+
+[connection signal="body_entered" from="platforms/heal_platform" to="." method="_on_heal_platform_body_entered"]
 
 
