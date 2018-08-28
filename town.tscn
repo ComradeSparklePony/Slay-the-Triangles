@@ -4,15 +4,15 @@
 [ext_resource path="res://world-wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://citizen.tscn" type="PackedScene" id=4]
-[ext_resource path="res://teleport.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=6]
+[ext_resource path="res://assets/white_circle_50px.png" type="Texture" id=5]
+[ext_resource path="res://teleport.tscn" type="PackedScene" id=6]
 
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 50.0
 
-[node name="town" type="Node2D" index="0"]
+[node name="town" type="Node2D"]
 
 script = ExtResource( 1 )
 hp_upgrade = null
@@ -752,12 +752,7 @@ message = "Welcome to the barracks! You can practice fighting here!"
 position = Vector2( 2900, 400 )
 message = "Beware! Triangles beyond! Teleport at your own risk!"
 
-[node name="teleport1" parent="." index="3" instance=ExtResource( 5 )]
-
-position = Vector2( 3600, 0 )
-SCENE_TO = "res://maze1.tscn"
-
-[node name="text" type="Node2D" parent="." index="4"]
+[node name="text" type="Node2D" parent="." index="3"]
 
 editor/display_folded = true
 
@@ -866,7 +861,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="platforms" type="Node2D" parent="." index="5"]
+[node name="platforms" type="Node2D" parent="." index="4"]
+
+editor/display_folded = true
 
 [node name="hp_platform" type="Area2D" parent="platforms" index="0"]
 
@@ -884,7 +881,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="platforms/hp_platform" index="0"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/hp_platform" index="1"]
@@ -908,7 +905,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="platforms/attack_platform" index="0"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/attack_platform" index="1"]
@@ -932,7 +929,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="platforms/attack_spd_platform" index="0"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/attack_spd_platform" index="1"]
@@ -956,7 +953,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="platforms/speed_platform" index="0"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/speed_platform" index="1"]
@@ -981,13 +978,21 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="platforms/heal_platform" index="0"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/heal_platform" index="1"]
 
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="teleports" type="Node2D" parent="." index="5"]
+
+position = Vector2( 3600, 0 )
+
+[node name="teleport1" parent="teleports" index="0" instance=ExtResource( 6 )]
+
+SCENE_TO = "res://maze1.tscn"
 
 [connection signal="body_entered" from="platforms/hp_platform" to="." method="_on_hp_platform_body_entered"]
 

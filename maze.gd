@@ -14,7 +14,6 @@ export (PackedScene) var wall
 # wall array contaisn where the walls are
 var wall_array
 var tunnels
-var difficulty
 
 func _ready():
 	
@@ -115,6 +114,7 @@ func _ready():
 			if wall_array[y][x] == 1 and not spawner_spawned:
 				$"enemy-spawner".position = Vector2(x, y) * 100
 				spawner_spawned = true
+	
 				
 
 # shuffles arrays

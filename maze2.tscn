@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://maze2.gd" type="Script" id=1]
+[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+
+[node name="maze" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+food = null
+enemy = null
+chest = null
+wall = null
+MAZESIZE = 100
+FOOD_NUM = null
+CHEST_NUM = null
+
+[node name="enemy-spawner" parent="." index="0" instance=ExtResource( 2 )]
+
+ROT_SPEED = 10
+SPEED = 5
+max_hp = 500
+
+[node name="player" parent="." index="1" instance=ExtResource( 3 )]
+
+
