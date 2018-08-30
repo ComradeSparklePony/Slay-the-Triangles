@@ -13,7 +13,10 @@ export (PackedScene) var coin
 
 func _ready():
 	# basic variable setup
-	player = get_parent().get_node("player")
+	if get_parent().has_node("player"):
+		player = get_parent().get_node("player")
+	else:
+		player = get_parent().get_parent().get_node("player")
 	$TextureProgress.max_value = hp
 	$TextureProgress.value = hp
 	$Timer.wait_time = rand_range(2, 10)

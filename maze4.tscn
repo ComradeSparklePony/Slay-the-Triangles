@@ -1,0 +1,239 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://world-wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=3]
+
+[node name="maze4" type="Node2D"]
+
+[node name="player" parent="." index="0" instance=ExtResource( 1 )]
+
+attack = 1000
+RELOAD_TIME = 0.001
+
+[node name="walls" type="Node" parent="." index="1"]
+
+editor/display_folded = true
+
+[node name="world-wall" parent="walls" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 0, -100 )
+
+[node name="world-wall2" parent="walls" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 100, 0 )
+
+[node name="world-wall3" parent="walls" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 0, 100 )
+
+[node name="world-wall4" parent="walls" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( -100, 100 )
+
+[node name="world-wall5" parent="walls" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( -200, 0 )
+
+[node name="world-wall6" parent="walls" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( -300, -100 )
+
+[node name="world-wall7" parent="walls" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( -100, -200 )
+
+[node name="world-wall8" parent="walls" index="7" instance=ExtResource( 2 )]
+
+position = Vector2( -400, -200 )
+
+[node name="world-wall9" parent="walls" index="8" instance=ExtResource( 2 )]
+
+position = Vector2( -200, -300 )
+
+[node name="world-wall10" parent="walls" index="9" instance=ExtResource( 2 )]
+
+position = Vector2( -500, -300 )
+
+[node name="world-wall11" parent="walls" index="10" instance=ExtResource( 2 )]
+
+position = Vector2( -600, -300 )
+
+[node name="world-wall12" parent="walls" index="11" instance=ExtResource( 2 )]
+
+position = Vector2( -700, -300 )
+
+[node name="world-wall13" parent="walls" index="12" instance=ExtResource( 2 )]
+
+position = Vector2( -800, -300 )
+
+[node name="world-wall14" parent="walls" index="13" instance=ExtResource( 2 )]
+
+position = Vector2( -900, -300 )
+
+[node name="world-wall15" parent="walls" index="14" instance=ExtResource( 2 )]
+
+position = Vector2( -1000, -400 )
+
+[node name="world-wall16" parent="walls" index="15" instance=ExtResource( 2 )]
+
+position = Vector2( -1000, -500 )
+
+[node name="world-wall17" parent="walls" index="16" instance=ExtResource( 2 )]
+
+position = Vector2( -1000, -600 )
+
+[node name="world-wall18" parent="walls" index="17" instance=ExtResource( 2 )]
+
+position = Vector2( -900, -700 )
+
+[node name="world-wall19" parent="walls" index="18" instance=ExtResource( 2 )]
+
+position = Vector2( -800, -700 )
+
+[node name="world-wall20" parent="walls" index="19" instance=ExtResource( 2 )]
+
+position = Vector2( -600, -700 )
+
+[node name="world-wall21" parent="walls" index="20" instance=ExtResource( 2 )]
+
+position = Vector2( -500, -700 )
+
+[node name="world-wall22" parent="walls" index="21" instance=ExtResource( 2 )]
+
+position = Vector2( -400, -700 )
+
+[node name="world-wall23" parent="walls" index="22" instance=ExtResource( 2 )]
+
+position = Vector2( -300, -600 )
+
+[node name="world-wall24" parent="walls" index="23" instance=ExtResource( 2 )]
+
+position = Vector2( -300, -500 )
+
+[node name="world-wall25" parent="walls" index="24" instance=ExtResource( 2 )]
+
+position = Vector2( -300, -400 )
+
+[node name="wave1" type="Node" parent="." index="2"]
+
+[node name="enemy" parent="wave1" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( -900, -600 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy2" parent="wave1" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( -800, -600 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy3" parent="wave1" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -700, -600 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy4" parent="wave1" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -600, -600 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy5" parent="wave1" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( -500, -600 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy6" parent="wave1" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( -400, -600 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy7" parent="wave1" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( -400, -500 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy8" parent="wave1" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( -500, -500 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy9" parent="wave1" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( -600, -500 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy10" parent="wave1" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( -700, -500 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy11" parent="wave1" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( -800, -500 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy12" parent="wave1" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( -900, -500 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy13" parent="wave1" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( -900, -400 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy14" parent="wave1" index="13" instance=ExtResource( 3 )]
+
+position = Vector2( -800, -400 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy15" parent="wave1" index="14" instance=ExtResource( 3 )]
+
+position = Vector2( -700, -400 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy16" parent="wave1" index="15" instance=ExtResource( 3 )]
+
+position = Vector2( -600, -400 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+[node name="enemy17" parent="wave1" index="16" instance=ExtResource( 3 )]
+
+position = Vector2( -500, -400 )
+SPEED = 100
+ATTACK = 1000
+hp = 1000
+
+
