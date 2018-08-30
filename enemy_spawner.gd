@@ -98,7 +98,7 @@ func _on_Area2D_area_entered(area):
 			var coin_amt = SPEED * 100
 
 			var coin_creater = Thread.new()
-			coin_creater.start(self, "create_coins_and_die", coin_num)
+			coin_creater.start(self, "create_coins_and_die", coin_amt)
 
 		if first_hit:
 			$Timer.wait_time = 0.1
