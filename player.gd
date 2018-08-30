@@ -18,10 +18,6 @@ export (PackedScene) var projectile
 
 func _ready():
 	
-	#delete this to ...
-	hp = max_hp
-	coins = 0
-	"""
 	#load the game
 	var save_file = File.new()
 	save_file.open("user://data.save", File.READ)
@@ -33,9 +29,7 @@ func _ready():
 	attack = data["player_attack"]
 	RELOAD_TIME = data["attack_speed"]
 	coins = data["coins"]
-	save_file.close()"""
-	
-	#... this
+	save_file.close()
 	
 	# setup timer
 	$Timer.wait_time = RELOAD_TIME

@@ -86,25 +86,19 @@ func _on_Timer_timeout():
 func _on_Area2D_area_entered(area):
 	
 	if area.is_in_group("projectile"):
-		hp -= player.attack
+		hp = max(hp - player.attack, 0)
 		$TextureProgress.value = hp
 		if hp == 0:
-			slow_mo = true
-			var coin_amt = SPEED * 100
-			#Engine.time_scale = 0.3
-			for i in range(int(coin_amt)):
-				#$Timer.wait_time = 0.00000000001
-				var new_coin = coin.instance()
-				new_coin.position = position + Vector2(rand_range(-i, i), rand_range(-i, i))/5
-				get_parent().add_child(new_coin)
-				#$Timer.start()
-				#yield($Timer,"timeout")
-			#Engine.time_scale = 1
+			
 			var new_teleport = teleport.instance()
 			new_teleport.SCENE_TO = "res://town.tscn"
 			new_teleport.position = position
 			get_parent().add_child(new_teleport)
-			queue_free()
+			
+			var coin_amt = SPEED * 100
+
+			var coin_creater = Thread.new()
+			coin_creater.start(self, "create_coins_and_die", coin_num)
 
 		if first_hit:
 			$Timer.wait_time = 0.1
@@ -112,3 +106,10 @@ func _on_Area2D_area_entered(area):
 			$Timer.start()
 			first_hit = false
 
+func create_coins_and_die(num):
+	hide()
+	for i in range(num):
+		var new_coin = coin.instance()
+		new_coin.position = position
+		get_parent().add_child(new_coin)
+	queue_free()

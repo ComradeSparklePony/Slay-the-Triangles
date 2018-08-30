@@ -44,15 +44,20 @@ func _on_Area2D_area_entered(area):
 		hp = max(hp-player.attack,0)
 		$TextureProgress.value = hp
 		if hp == 0:
-			for i in range(int(sqrt(ATTACK * SPEED))):
-				var new_coin = coin.instance()
-				new_coin.position = position
-				get_parent().add_child(new_coin)
-			queue_free()
+			var coin_amt = int(sqrt(ATTACK * SPEED))
+			var coin_creater = Thread.new()
+			coin_creater.start(self, "create_coins_and_die", coin_amt)
 
 # create new weapon when neccecary
 func _on_Timer_timeout():
 	$Timer.wait_time = rand_range(2, 10)
 	add_child(enemy_weapon.instance())
 	timer_active = false
-	
+
+func create_coins_and_die(num):
+	hide()
+	for i in range(num):
+		var new_coin = coin.instance()
+		new_coin.position = position
+		get_parent().add_child(new_coin)
+	queue_free()
