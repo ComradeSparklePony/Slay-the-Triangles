@@ -22,8 +22,6 @@ speed = null
 
 [node name="walls" type="Node2D" parent="." index="0"]
 
-editor/display_folded = true
-
 [node name="world-wall" parent="walls" index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 0, -100 )
@@ -391,328 +389,347 @@ position = Vector2( 3300, -800 )
 
 position = Vector2( 3300, -700 )
 
-[node name="world-wall109" parent="walls" index="90" instance=ExtResource( 2 )]
+[node name="world-wall175" parent="walls" index="90" instance=ExtResource( 2 )]
+
+position = Vector2( 3000, -700 )
+scale = Vector2( 6.64062, 3.625 )
+
+[node name="world-wall109" parent="walls" index="91" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, -600 )
 
-[node name="world-wall110" parent="walls" index="91" instance=ExtResource( 2 )]
+[node name="world-wall110" parent="walls" index="92" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, -500 )
 
-[node name="world-wall111" parent="walls" index="92" instance=ExtResource( 2 )]
+[node name="world-wall111" parent="walls" index="93" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, -400 )
 
-[node name="world-wall112" parent="walls" index="93" instance=ExtResource( 2 )]
+[node name="world-wall112" parent="walls" index="94" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, -300 )
 
-[node name="world-wall113" parent="walls" index="94" instance=ExtResource( 2 )]
+[node name="world-wall113" parent="walls" index="95" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, -200 )
 
-[node name="world-wall114" parent="walls" index="95" instance=ExtResource( 2 )]
+[node name="world-wall114" parent="walls" index="96" instance=ExtResource( 2 )]
 
 position = Vector2( 3200, -200 )
 
-[node name="world-wall115" parent="walls" index="96" instance=ExtResource( 2 )]
+[node name="world-wall115" parent="walls" index="97" instance=ExtResource( 2 )]
 
 position = Vector2( 3100, -200 )
 
-[node name="world-wall116" parent="walls" index="97" instance=ExtResource( 2 )]
+[node name="world-wall116" parent="walls" index="98" instance=ExtResource( 2 )]
 
 position = Vector2( 3000, -200 )
 
-[node name="world-wall117" parent="walls" index="98" instance=ExtResource( 2 )]
+[node name="world-wall117" parent="walls" index="99" instance=ExtResource( 2 )]
 
 position = Vector2( 2900, -200 )
 
-[node name="world-wall118" parent="walls" index="99" instance=ExtResource( 2 )]
+[node name="world-wall118" parent="walls" index="100" instance=ExtResource( 2 )]
 
 position = Vector2( 2800, -200 )
 
-[node name="world-wall119" parent="walls" index="100" instance=ExtResource( 2 )]
+[node name="world-wall119" parent="walls" index="101" instance=ExtResource( 2 )]
 
 position = Vector2( 2700, -200 )
 
-[node name="world-wall120" parent="walls" index="101" instance=ExtResource( 2 )]
+[node name="world-wall120" parent="walls" index="102" instance=ExtResource( 2 )]
 
 position = Vector2( 2600, -200 )
 
-[node name="world-wall121" parent="walls" index="102" instance=ExtResource( 2 )]
+[node name="world-wall121" parent="walls" index="103" instance=ExtResource( 2 )]
 
 position = Vector2( 2500, -200 )
 
-[node name="world-wall122" parent="walls" index="103" instance=ExtResource( 2 )]
+[node name="world-wall122" parent="walls" index="104" instance=ExtResource( 2 )]
 
 position = Vector2( 2400, -200 )
 
-[node name="world-wall123" parent="walls" index="104" instance=ExtResource( 2 )]
+[node name="world-wall123" parent="walls" index="105" instance=ExtResource( 2 )]
 
 position = Vector2( 2300, -200 )
 
-[node name="world-wall124" parent="walls" index="105" instance=ExtResource( 2 )]
+[node name="world-wall172" parent="walls" index="106" instance=ExtResource( 2 )]
 
 position = Vector2( 2300, -200 )
 
-[node name="world-wall125" parent="walls" index="106" instance=ExtResource( 2 )]
+[node name="world-wall174" parent="walls" index="107" instance=ExtResource( 2 )]
+
+position = Vector2( 2309, -716 )
+scale = Vector2( 4.40625, 3.625 )
+
+[node name="world-wall173" parent="walls" index="108" instance=ExtResource( 2 )]
+
+position = Vector2( 2200, -200 )
+
+[node name="world-wall124" parent="walls" index="109" instance=ExtResource( 2 )]
+
+position = Vector2( 2700, -425 )
+scale = Vector2( 11.4375, 3.90625 )
+
+[node name="world-wall125" parent="walls" index="110" instance=ExtResource( 2 )]
 
 position = Vector2( 2200, 100 )
 
-[node name="world-wall126" parent="walls" index="107" instance=ExtResource( 2 )]
+[node name="world-wall126" parent="walls" index="111" instance=ExtResource( 2 )]
 
 position = Vector2( 2300, 100 )
 
-[node name="world-wall127" parent="walls" index="108" instance=ExtResource( 2 )]
+[node name="world-wall127" parent="walls" index="112" instance=ExtResource( 2 )]
 
 position = Vector2( 2400, 100 )
 
-[node name="world-wall128" parent="walls" index="109" instance=ExtResource( 2 )]
+[node name="world-wall128" parent="walls" index="113" instance=ExtResource( 2 )]
 
 position = Vector2( 2500, 100 )
 
-[node name="world-wall129" parent="walls" index="110" instance=ExtResource( 2 )]
+[node name="world-wall129" parent="walls" index="114" instance=ExtResource( 2 )]
 
 position = Vector2( 2600, 100 )
 
-[node name="world-wall130" parent="walls" index="111" instance=ExtResource( 2 )]
+[node name="world-wall130" parent="walls" index="115" instance=ExtResource( 2 )]
 
 position = Vector2( 2700, 100 )
 
-[node name="world-wall131" parent="walls" index="112" instance=ExtResource( 2 )]
+[node name="world-wall131" parent="walls" index="116" instance=ExtResource( 2 )]
 
 position = Vector2( 2800, 100 )
 
-[node name="world-wall132" parent="walls" index="113" instance=ExtResource( 2 )]
+[node name="world-wall132" parent="walls" index="117" instance=ExtResource( 2 )]
 
 position = Vector2( 2900, 100 )
 
-[node name="world-wall133" parent="walls" index="114" instance=ExtResource( 2 )]
+[node name="world-wall133" parent="walls" index="118" instance=ExtResource( 2 )]
 
 position = Vector2( 3000, 100 )
 
-[node name="world-wall134" parent="walls" index="115" instance=ExtResource( 2 )]
+[node name="world-wall134" parent="walls" index="119" instance=ExtResource( 2 )]
 
 position = Vector2( 3100, 100 )
 
-[node name="world-wall135" parent="walls" index="116" instance=ExtResource( 2 )]
+[node name="world-wall135" parent="walls" index="120" instance=ExtResource( 2 )]
 
 position = Vector2( 3200, 100 )
 
-[node name="world-wall136" parent="walls" index="117" instance=ExtResource( 2 )]
+[node name="world-wall136" parent="walls" index="121" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, 100 )
 
-[node name="world-wall137" parent="walls" index="118" instance=ExtResource( 2 )]
+[node name="world-wall137" parent="walls" index="122" instance=ExtResource( 2 )]
 
 position = Vector2( 3300, 100 )
 
-[node name="world-wall138" parent="walls" index="119" instance=ExtResource( 2 )]
+[node name="world-wall138" parent="walls" index="123" instance=ExtResource( 2 )]
 
 position = Vector2( 3400, 100 )
 
-[node name="world-wall139" parent="walls" index="120" instance=ExtResource( 2 )]
+[node name="world-wall139" parent="walls" index="124" instance=ExtResource( 2 )]
 
 position = Vector2( 3500, 100 )
 
-[node name="world-wall140" parent="walls" index="121" instance=ExtResource( 2 )]
+[node name="world-wall140" parent="walls" index="125" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, 100 )
 
-[node name="world-wall141" parent="walls" index="122" instance=ExtResource( 2 )]
+[node name="world-wall141" parent="walls" index="126" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, 100 )
 
-[node name="world-wall142" parent="walls" index="123" instance=ExtResource( 2 )]
+[node name="world-wall142" parent="walls" index="127" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, 0 )
 
-[node name="world-wall143" parent="walls" index="124" instance=ExtResource( 2 )]
+[node name="world-wall143" parent="walls" index="128" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -100 )
 
-[node name="world-wall144" parent="walls" index="125" instance=ExtResource( 2 )]
+[node name="world-wall144" parent="walls" index="129" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -200 )
 
-[node name="world-wall145" parent="walls" index="126" instance=ExtResource( 2 )]
+[node name="world-wall145" parent="walls" index="130" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -300 )
 
-[node name="world-wall146" parent="walls" index="127" instance=ExtResource( 2 )]
+[node name="world-wall146" parent="walls" index="131" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -400 )
 
-[node name="world-wall147" parent="walls" index="128" instance=ExtResource( 2 )]
+[node name="world-wall147" parent="walls" index="132" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -500 )
 
-[node name="world-wall148" parent="walls" index="129" instance=ExtResource( 2 )]
+[node name="world-wall148" parent="walls" index="133" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -600 )
 
-[node name="world-wall149" parent="walls" index="130" instance=ExtResource( 2 )]
+[node name="world-wall149" parent="walls" index="134" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -700 )
 
-[node name="world-wall150" parent="walls" index="131" instance=ExtResource( 2 )]
+[node name="world-wall150" parent="walls" index="135" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -800 )
 
-[node name="world-wall151" parent="walls" index="132" instance=ExtResource( 2 )]
+[node name="world-wall151" parent="walls" index="136" instance=ExtResource( 2 )]
 
 position = Vector2( 3700, -900 )
 
-[node name="world-wall152" parent="walls" index="133" instance=ExtResource( 2 )]
+[node name="world-wall152" parent="walls" index="137" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, -900 )
 
-[node name="world-wall153" parent="walls" index="134" instance=ExtResource( 2 )]
+[node name="world-wall153" parent="walls" index="138" instance=ExtResource( 2 )]
 
 position = Vector2( 3500, -900 )
 
-[node name="world-wall154" parent="walls" index="135" instance=ExtResource( 2 )]
+[node name="world-wall154" parent="walls" index="139" instance=ExtResource( 2 )]
 
 position = Vector2( 3400, -900 )
 
-[node name="world-wall155" parent="walls" index="136" instance=ExtResource( 2 )]
+[node name="world-wall155" parent="walls" index="140" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, -100 )
 
-[node name="world-wall156" parent="walls" index="137" instance=ExtResource( 2 )]
+[node name="world-wall156" parent="walls" index="141" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, -300 )
 
-[node name="world-wall168" parent="walls" index="138" instance=ExtResource( 2 )]
+[node name="world-wall168" parent="walls" index="142" instance=ExtResource( 2 )]
 
 position = Vector2( 4263.8, -565.223 )
 scale = Vector2( -10.6217, 17.0582 )
 
-[node name="world-wall157" parent="walls" index="139" instance=ExtResource( 2 )]
+[node name="world-wall157" parent="walls" index="143" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, -500 )
 
-[node name="world-wall158" parent="walls" index="140" instance=ExtResource( 2 )]
+[node name="world-wall158" parent="walls" index="144" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, -700 )
 
-[node name="world-wall159" parent="walls" index="141" instance=ExtResource( 2 )]
+[node name="world-wall159" parent="walls" index="145" instance=ExtResource( 2 )]
 
 position = Vector2( 3600, -700 )
 
-[node name="world-wall83" parent="walls" index="142" instance=ExtResource( 2 )]
+[node name="world-wall83" parent="walls" index="146" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -800 )
 
-[node name="world-wall84" parent="walls" index="143" instance=ExtResource( 2 )]
+[node name="world-wall84" parent="walls" index="147" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -700 )
 
-[node name="world-wall85" parent="walls" index="144" instance=ExtResource( 2 )]
+[node name="world-wall85" parent="walls" index="148" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -600 )
 
-[node name="world-wall86" parent="walls" index="145" instance=ExtResource( 2 )]
+[node name="world-wall86" parent="walls" index="149" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -500 )
 
-[node name="world-wall87" parent="walls" index="146" instance=ExtResource( 2 )]
+[node name="world-wall87" parent="walls" index="150" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -400 )
 
-[node name="world-wall88" parent="walls" index="147" instance=ExtResource( 2 )]
+[node name="world-wall88" parent="walls" index="151" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -300 )
 
-[node name="world-wall89" parent="walls" index="148" instance=ExtResource( 2 )]
+[node name="world-wall89" parent="walls" index="152" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -200 )
 
-[node name="world-wall90" parent="walls" index="149" instance=ExtResource( 2 )]
+[node name="world-wall90" parent="walls" index="153" instance=ExtResource( 2 )]
 
 position = Vector2( 2100, -200 )
 
-[node name="world-wall41" parent="walls" index="150" instance=ExtResource( 2 )]
+[node name="world-wall41" parent="walls" index="154" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -800 )
 
-[node name="world-wall42" parent="walls" index="151" instance=ExtResource( 2 )]
+[node name="world-wall42" parent="walls" index="155" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -700 )
 
-[node name="world-wall43" parent="walls" index="152" instance=ExtResource( 2 )]
+[node name="world-wall43" parent="walls" index="156" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -600 )
 
-[node name="world-wall44" parent="walls" index="153" instance=ExtResource( 2 )]
+[node name="world-wall44" parent="walls" index="157" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -500 )
 
-[node name="world-wall45" parent="walls" index="154" instance=ExtResource( 2 )]
+[node name="world-wall45" parent="walls" index="158" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -400 )
 
-[node name="world-wall46" parent="walls" index="155" instance=ExtResource( 2 )]
+[node name="world-wall46" parent="walls" index="159" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -300 )
 
-[node name="world-wall47" parent="walls" index="156" instance=ExtResource( 2 )]
+[node name="world-wall47" parent="walls" index="160" instance=ExtResource( 2 )]
 
 position = Vector2( 1700, -799.988 )
 
-[node name="world-wall48" parent="walls" index="157" instance=ExtResource( 2 )]
+[node name="world-wall48" parent="walls" index="161" instance=ExtResource( 2 )]
 
 position = Vector2( 1600, -799.988 )
 
-[node name="world-wall49" parent="walls" index="158" instance=ExtResource( 2 )]
+[node name="world-wall49" parent="walls" index="162" instance=ExtResource( 2 )]
 
 position = Vector2( 1500, -799.988 )
 
-[node name="world-wall50" parent="walls" index="159" instance=ExtResource( 2 )]
+[node name="world-wall50" parent="walls" index="163" instance=ExtResource( 2 )]
 
 position = Vector2( 1700, -599.988 )
 
-[node name="world-wall51" parent="walls" index="160" instance=ExtResource( 2 )]
+[node name="world-wall51" parent="walls" index="164" instance=ExtResource( 2 )]
 
 position = Vector2( 1600, -599.988 )
 
-[node name="world-wall52" parent="walls" index="161" instance=ExtResource( 2 )]
+[node name="world-wall52" parent="walls" index="165" instance=ExtResource( 2 )]
 
 position = Vector2( 1500, -599.988 )
 
-[node name="world-wall53" parent="walls" index="162" instance=ExtResource( 2 )]
+[node name="world-wall53" parent="walls" index="166" instance=ExtResource( 2 )]
 
 position = Vector2( 1700, -399.988 )
 
-[node name="world-wall54" parent="walls" index="163" instance=ExtResource( 2 )]
+[node name="world-wall54" parent="walls" index="167" instance=ExtResource( 2 )]
 
 position = Vector2( 1600, -399.988 )
 
-[node name="world-wall55" parent="walls" index="164" instance=ExtResource( 2 )]
+[node name="world-wall55" parent="walls" index="168" instance=ExtResource( 2 )]
 
 position = Vector2( 1500, -399.988 )
 
-[node name="world-wall56" parent="walls" index="165" instance=ExtResource( 2 )]
+[node name="world-wall56" parent="walls" index="169" instance=ExtResource( 2 )]
 
 position = Vector2( 1300, -200 )
 
-[node name="world-wall57" parent="walls" index="166" instance=ExtResource( 2 )]
+[node name="world-wall57" parent="walls" index="170" instance=ExtResource( 2 )]
 
 position = Vector2( 1500.02, -200.07 )
 
-[node name="world-wall58" parent="walls" index="167" instance=ExtResource( 2 )]
+[node name="world-wall58" parent="walls" index="171" instance=ExtResource( 2 )]
 
 position = Vector2( 1600.02, -200.07 )
 
-[node name="world-wall59" parent="walls" index="168" instance=ExtResource( 2 )]
+[node name="world-wall59" parent="walls" index="172" instance=ExtResource( 2 )]
 
 position = Vector2( 1700.02, -200.07 )
 
-[node name="world-wall60" parent="walls" index="169" instance=ExtResource( 2 )]
+[node name="world-wall60" parent="walls" index="173" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -200 )
 
-[node name="world-wall61" parent="walls" index="170" instance=ExtResource( 2 )]
+[node name="world-wall61" parent="walls" index="174" instance=ExtResource( 2 )]
 
 position = Vector2( 1800, -200 )
 
@@ -720,7 +737,6 @@ position = Vector2( 1800, -200 )
 
 [node name="citizens" type="Node2D" parent="." index="2"]
 
-editor/display_folded = true
 position = Vector2( 300, -500 )
 
 [node name="welcome" parent="citizens" index="0" instance=ExtResource( 4 )]
@@ -745,8 +761,8 @@ message = "Welcome to the hospital! Step on the platform to heal, free of charge
 
 [node name="soldier" parent="citizens" index="4" instance=ExtResource( 4 )]
 
-position = Vector2( 2000, 400 )
-message = "Welcome to the barracks! You can practice fighting here!"
+position = Vector2( 2300, -250 )
+message = "U r h4ck3r if ur h3r3"
 
 [node name="warn" parent="citizens" index="5" instance=ExtResource( 4 )]
 

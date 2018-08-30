@@ -25,12 +25,12 @@ wall = ExtResource( 5 )
 
 ROT_SPEED = 10
 SPEED = 5
-tri_spawn_wait_factor = 150
-tri_min_attack = 15
-tri_max_attack = 20
-tri_min_hp = 150
-tri_max_hp = 200
-max_hp = 1000
+tri_spawn_wait_factor = 1000
+tri_min_attack = 30
+tri_max_attack = 50
+tri_min_hp = 300
+tri_max_hp = 500
+max_hp = 5000
 
 [node name="player" parent="." index="1" instance=ExtResource( 7 )]
 

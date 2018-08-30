@@ -79,6 +79,6 @@ func _on_Area2D_area_entered(area):
 	if area.is_in_group("enemy_weapon"):
 		# gets the enemy's attack
 		var enemy_ATTACK = area.get_parent().ATTACK
-		hp -= enemy_ATTACK
+		hp = max(hp - enemy_ATTACK, 0)
 		if hp == 0:
 			queue_free()
