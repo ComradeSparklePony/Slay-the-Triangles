@@ -720,6 +720,7 @@ position = Vector2( 1800, -200 )
 
 [node name="citizens" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 300, -500 )
 
 [node name="welcome" parent="citizens" index="0" instance=ExtResource( 4 )]
@@ -993,6 +994,11 @@ position = Vector2( 3600, 0 )
 [node name="teleport1" parent="teleports" index="0" instance=ExtResource( 6 )]
 
 SCENE_TO = "res://maze1.tscn"
+
+[node name="teleport2" parent="teleports" index="1" instance=ExtResource( 6 )]
+
+position = Vector2( 0, -200 )
+SCENE_TO = "res://maze2.tscn"
 
 [connection signal="body_entered" from="platforms/hp_platform" to="." method="_on_hp_platform_body_entered"]
 

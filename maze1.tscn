@@ -14,7 +14,7 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 MAZESIZE = 100
 TUNLEN = 10
-TUNNELS = 1000
+TUNNELS = 2000
 FOOD_NUM = 70
 CHEST_NUM = 25
 food = ExtResource( 2 )
@@ -23,6 +23,11 @@ chest = ExtResource( 4 )
 wall = ExtResource( 5 )
 
 [node name="enemy-spawner" parent="." index="0" instance=ExtResource( 6 )]
+
+tri_min_attack = 3
+tri_max_attack = 7
+tri_min_hp = 70
+tri_max_hp = 120
 
 [node name="player" parent="." index="1" instance=ExtResource( 7 )]
 

@@ -38,7 +38,7 @@ func _process(delta):
 # take damage
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("projectile"):
-		hp -= player.attack
+		hp = max(hp-player.attack,0)
 		$TextureProgress.value = hp
 		if hp == 0:
 			for i in range(int(sqrt(ATTACK * SPEED))):

@@ -8,5 +8,5 @@ func _on_chest_area_entered(area):
 		for i in range(coin_num):
 			var new_coin = coin.instance()
 			new_coin.position = position
-			get_parent().add_child(new_coin)
+			get_parent().call_deferred("add_child", new_coin)
 		queue_free()

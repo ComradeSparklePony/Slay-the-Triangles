@@ -4,6 +4,13 @@ export (PackedScene) var enemy
 
 export (int) var ROT_SPEED
 export (int) var SPEED
+export (int) var tri_spawn_wait_factor
+
+export (int) var tri_min_attack
+export (int) var tri_max_attack
+export (int) var tri_min_hp
+export (int) var tri_max_hp
+
 var velocity
 var player
 
@@ -70,6 +77,8 @@ func _on_Timer_timeout():
 		$Timer.wait_time = player_distance / 70
 		var new_enemy = enemy.instance()
 		new_enemy.position = position
+		new_enemy.ATTACK = rand_range(tri_min_attack, tri_max_attack)
+		new_enemy.hp = rand_range(tri_min_hp, tri_max_hp)
 		get_parent().add_child(new_enemy)
 		$Timer.start()
 

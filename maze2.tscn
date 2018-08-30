@@ -1,26 +1,37 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://maze2.gd" type="Script" id=1]
-[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=2]
-[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://food.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://chest.tscn" type="PackedScene" id=4]
+[ext_resource path="res://world-wall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://enemy_spawner.tscn" type="PackedScene" id=6]
+[ext_resource path="res://player.tscn" type="PackedScene" id=7]
 
-[node name="maze" type="Node2D" index="0"]
+[node name="maze" type="Node2D"]
 
 script = ExtResource( 1 )
-food = null
-enemy = null
-chest = null
-wall = null
 MAZESIZE = 100
-FOOD_NUM = null
-CHEST_NUM = null
+TUNLEN = 2
+TUNNELS = 10
+FOOD_NUM = 5
+CHEST_NUM = 2
+food = ExtResource( 2 )
+enemy = ExtResource( 3 )
+chest = ExtResource( 4 )
+wall = ExtResource( 5 )
 
-[node name="enemy-spawner" parent="." index="0" instance=ExtResource( 2 )]
+[node name="enemy-spawner" parent="." index="0" instance=ExtResource( 6 )]
 
 ROT_SPEED = 10
 SPEED = 5
-max_hp = 500
+tri_spawn_wait_factor = 150
+tri_min_attack = 15
+tri_max_attack = 20
+tri_min_hp = 150
+tri_max_hp = 200
+max_hp = 1000
 
-[node name="player" parent="." index="1" instance=ExtResource( 3 )]
+[node name="player" parent="." index="1" instance=ExtResource( 7 )]
 
 

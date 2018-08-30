@@ -22,7 +22,7 @@ func _ready():
 	$text/coins.text = "Your coins: " + str($player.coins)
 	$text/maxhp.text = "Current Max Hp: " + str($player.max_hp)
 	$text/attack.text = "Current Attack: " + str($player.attack)
-	$text/attackspeed.text = "Current Attack Speed: " + str($player.RELOAD_TIME)
+	$text/attackspeed.text = "Current Attack Speed: " + str($player.RELOAD_TIME) + " secs"
 
 
 func _on_hp_platform_body_entered(body):
@@ -49,8 +49,9 @@ func _on_attack_spd_platform_body_entered(body):
 		if body.coins >= 500:
 			body.coins -= 500
 			body.RELOAD_TIME = body.RELOAD_TIME/ 1.5
+			body.get_node("Timer").wait_time = body.RELOAD_TIME
 			$text/coins.text = "Your coins: " + str(body.coins)
-			$text/attackspeed.text = "Current Attack Speed: " + str(body.RELOAD_TIME)
+			$text/attackspeed.text = "Current Attack Speed: " + str(body.RELOAD_TIME) + " secs"
 
 
 func _on_speed_platform_body_entered(body):
