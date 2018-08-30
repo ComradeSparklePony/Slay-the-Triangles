@@ -81,4 +81,4 @@ func _on_Area2D_area_entered(area):
 		var enemy_ATTACK = area.get_parent().ATTACK
 		hp = max(hp - enemy_ATTACK, 0)
 		if hp == 0:
-			queue_free()
+			get_tree().change_scene("res://game_over.tscn")
