@@ -8,7 +8,7 @@
 [ext_resource path="res://food.tscn" type="PackedScene" id=6]
 [ext_resource path="res://teleport.tscn" type="PackedScene" id=7]
 
-[node name="tutorial" type="Node2D"]
+[node name="tutorial" type="Node2D" index="0"]
 
 [node name="walls (SLAY)" type="Node2D" parent="." index="0"]
 
@@ -1369,20 +1369,20 @@ scale = Vector2( 17.75, 19.3438 )
 position = Vector2( 299, -840 )
 scale = Vector2( 32.4688, 8.6875 )
 
-[node name="spawner_model" type="Node2D" parent="." index="6"]
+[node name="enemy_spawner" type="Node2D" parent="." index="6"]
 
 editor/display_folded = true
 position = Vector2( 5280, 1370 )
 z_index = 1
 _sections_unfolded = [ "Transform" ]
 
-[node name="Sprite" type="Sprite" parent="spawner_model" index="0"]
+[node name="Sprite" type="Sprite" parent="enemy_spawner" index="0"]
 
 rotation = 1.5708
 texture = ExtResource( 4 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Sprite2" type="Sprite" parent="spawner_model" index="1"]
+[node name="Sprite2" type="Sprite" parent="enemy_spawner" index="1"]
 
 rotation = -1.5708
 texture = ExtResource( 4 )
